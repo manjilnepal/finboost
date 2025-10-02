@@ -7,3 +7,5 @@ training_data.tar.gz
 PythonCode
 participant_data
 *.csv
+
+*.zip

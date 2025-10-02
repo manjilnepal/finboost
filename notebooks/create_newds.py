@@ -11,6 +11,13 @@ from typing import Tuple, Optional
 import matplotlib.pyplot as plt
 import seaborn as sns
 import sys
+import logging
+
+# Configure basic logging to console
+logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
+
+# Get a logger instance
+logger = logging.getLogger('')
 
 sys.path.append('../utilities')
 from preprocess import preprocess
@@ -81,15 +88,15 @@ for index_event, outcome_event, col_pair in event_pairs:
     test_features.remove("timeDiff")
     test_features.remove("status")
 
-    print(f"\n{'='*70}")
-    print(f"Preparing new dataset for {col_pair} having {len(train_features)} train columns......")
-    print(f"{'='*70}")
+    logger.info(f"{'='*70}")
+    logger.info(f"Preparing new dataset for {col_pair} having {len(train_features)} train columns......")
+    logger.info(f"{'='*70}")
     dataset_path = os.path.join(index_event, outcome_event)
     try:
         train_df = pd.read_csv(os.path.join(PARTICIPANT_DATA_PATH, dataset_path, 'train.csv'))
         test_features_df = pd.read_csv(os.path.join(PARTICIPANT_DATA_PATH, dataset_path, 'test_features.csv'))
     except FileNotFoundError as e:
-        print(f"Data not found for {dataset_path}. Skipping.")
+        logger.info(f"Data not found for {dataset_path}. Skipping.")
         continue
         
     X_train, y_train, X_test_processed = preprocess(train_df, test_features_df)
@@ -110,7 +117,7 @@ for index_event, outcome_event, col_pair in event_pairs:
     final_train_df.to_csv(train_save_path, index=False)
     final_test_df.to_csv(test_save_path, index=False)
 
-    print(f"Sucessfully saved new dataset for {col_pair}.")
-    print(f"{'='*70}")
+    logger.info(f"Sucessfully saved new dataset for {col_pair}.")
+    logger.info(f"{'='*70}")
 
-print("\n\nAll new dataset files have been generated and saved.")
+logger.info("\n\nAll new dataset files have been generated and saved.")

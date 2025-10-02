@@ -1,0 +1,100 @@
+nohup: ignoring input
+INFO: 
+======================================================================
+INFO: Preparing new dataset for Borrow_Deposit having 67 train columns......
+INFO: ======================================================================
+INFO: Sucessfully saved new dataset for Borrow_Deposit.
+INFO: ======================================================================
+INFO: 
+======================================================================
+INFO: Preparing new dataset for Borrow_Repay having 64 train columns......
+INFO: ======================================================================
+INFO: Sucessfully saved new dataset for Borrow_Repay.
+INFO: ======================================================================
+INFO: 
+======================================================================
+INFO: Preparing new dataset for Borrow_Withdraw having 64 train columns......
+INFO: ======================================================================
+INFO: Sucessfully saved new dataset for Borrow_Withdraw.
+INFO: ======================================================================
+INFO: 
+======================================================================
+INFO: Preparing new dataset for Borrow_Liquidated having 40 train columns......
+INFO: ======================================================================
+INFO: Sucessfully saved new dataset for Borrow_Liquidated.
+INFO: ======================================================================
+INFO: 
+======================================================================
+INFO: Preparing new dataset for Deposit_Borrow having 72 train columns......
+INFO: ======================================================================
+INFO: Sucessfully saved new dataset for Deposit_Borrow.
+INFO: ======================================================================
+INFO: 
+======================================================================
+INFO: Preparing new dataset for Deposit_Repay having 69 train columns......
+INFO: ======================================================================
+INFO: Sucessfully saved new dataset for Deposit_Repay.
+INFO: ======================================================================
+INFO: 
+======================================================================
+INFO: Preparing new dataset for Deposit_Withdraw having 65 train columns......
+INFO: ======================================================================
+INFO: Sucessfully saved new dataset for Deposit_Withdraw.
+INFO: ======================================================================
+INFO: 
+======================================================================
+INFO: Preparing new dataset for Deposit_Liquidated having 56 train columns......
+INFO: ======================================================================
+INFO: Sucessfully saved new dataset for Deposit_Liquidated.
+INFO: ======================================================================
+INFO: 
+======================================================================
+INFO: Preparing new dataset for Repay_Borrow having 60 train columns......
+INFO: ======================================================================
+INFO: Sucessfully saved new dataset for Repay_Borrow.
+INFO: ======================================================================
+INFO: 
+======================================================================
+INFO: Preparing new dataset for Repay_Deposit having 62 train columns......
+INFO: ======================================================================
+INFO: Sucessfully saved new dataset for Repay_Deposit.
+INFO: ======================================================================
+INFO: 
+======================================================================
+INFO: Preparing new dataset for Repay_Withdraw having 62 train columns......
+INFO: ======================================================================
+INFO: Sucessfully saved new dataset for Repay_Withdraw.
+INFO: ======================================================================
+INFO: 
+======================================================================
+INFO: Preparing new dataset for Repay_Liquidated having 36 train columns......
+INFO: ======================================================================
+INFO: Sucessfully saved new dataset for Repay_Liquidated.
+INFO: ======================================================================
+INFO: 
+======================================================================
+INFO: Preparing new dataset for Withdraw_Borrow having 69 train columns......
+INFO: ======================================================================
+INFO: Sucessfully saved new dataset for Withdraw_Borrow.
+INFO: ======================================================================
+INFO: 
+======================================================================
+INFO: Preparing new dataset for Withdraw_Deposit having 72 train columns......
+INFO: ======================================================================
+INFO: Sucessfully saved new dataset for Withdraw_Deposit.
+INFO: ======================================================================
+INFO: 
+======================================================================
+INFO: Preparing new dataset for Withdraw_Repay having 70 train columns......
+INFO: ======================================================================
+INFO: Sucessfully saved new dataset for Withdraw_Repay.
+INFO: ======================================================================
+INFO: 
+======================================================================
+INFO: Preparing new dataset for Withdraw_Liquidated having 47 train columns......
+INFO: ======================================================================
+INFO: Sucessfully saved new dataset for Withdraw_Liquidated.
+INFO: ======================================================================
+INFO: 
+
+All new dataset files have been generated and saved.
