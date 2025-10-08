@@ -13,9 +13,12 @@ sys.path.append('../utilities')
 
 from preprocess import preprocess
 
+LR = 0.01
+ROUNDS = 1000
+
 ## --- DEFINE PATH --- ##
 PARTICIPANT_DATA_PATH = '/home/dgxuser40/manjil/finsurv/participant_data'
-SUBMISSION_DIR = '1000boost_xgb_without_fs'
+SUBMISSION_DIR = f'{LR}_{ROUNDS}_boost_xgb'
 os.makedirs(SUBMISSION_DIR, exist_ok=True)
 
 ## --- DEFINE ALL 16 EVENT PAIRS --- ##
@@ -77,7 +80,7 @@ for index_event, outcome_event in event_pairs:
         model = xgb.train(
             params,
             dtrain,
-            num_boost_round=1000,
+            num_boost_round=ROUNDS,
             verbose_eval=False
         )
 
@@ -101,7 +104,7 @@ print("\n\nAll prediction files have been generated.")
 
 
 ## --- CREATE SUMBISSION FOLDER --- ##
-output_zip_filename = '1000boost_xgb_without_fs'
+output_zip_filename = f'{LR}_{ROUNDS}_boost_xgb'
 shutil.make_archive(output_zip_filename, 'zip', SUBMISSION_DIR)
 print(f"Successfully created '{output_zip_filename}.zip' from the '{SUBMISSION_DIR}' directory.")
 print("You can now upload this file to the CodaBench competition.")
