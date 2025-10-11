@@ -7,17 +7,18 @@ import lightgbm as lgb
 from sklearn.preprocessing import StandardScaler
 from typing import Tuple, Optional
 import sys
-from lifelines import WeibullAFTFitter
 
 sys.path.append('../utilities')
 
 from preprocess import preprocess
 
-BOOSTING_ROUNDS = 100
+LR = 0.001
+ROUNDS = 500
+
 
 ## --- DEFINE PATH --- ##
 PARTICIPANT_DATA_PATH = '/home/dgxuser40/manjil/finsurv/participant_data'
-SUBMISSION_DIR = f'{BOOSTING_ROUNDS}_boost_lgb_without_fs'
+SUBMISSION_DIR = f'{LR}_{ROUNDS}_boost_lgbm'
 os.makedirs(SUBMISSION_DIR, exist_ok=True)
 
 ## --- DEFINE ALL 16 EVENT PAIRS --- ##
@@ -49,54 +50,57 @@ for index_event, outcome_event in event_pairs:
 
     try:
 
-        # LightGBM parameters for survival analysis
+        # LightGBM parameters optimized for survival analysis
         params = {
-            'objective': 'regression',  # LightGBM doesn't have native Cox objective
-            'metric': 'l2',
+            'objective': 'regression_l2',
+            'metric': 'rmse',
             'boosting_type': 'gbdt',
             'max_depth': 3,
-            'learning_rate': 0.05,
+            'learning_rate': LR,
             'subsample': 0.8,
-            'subsample_freq': 1,
             'colsample_bytree': 0.8,
-            'min_child_weight': 5,
-            'lambda_l2': 1.0,  # L2 regularization
-            'lambda_l1': 0.1,  # L1 regularization
             'seed': 42,
-            'verbose': -1
+            'verbose': -1,
+            'num_leaves': 31,
+            'min_data_in_leaf': 20,
+            'lambda_l1': 1.0,
+            'lambda_l2': 1.0,
+            'min_gain_to_split': 0.1
         }
 
         print("Training model...")
 
-        y_train_lgb = np.where(
-            y_train['status'] == 1,
-            y_train['timeDiff'],  # positive for events
-            -y_train['timeDiff']  # negative for censored
-        )
-
-        # Create LightGBM datasets
-        train_data = lgb.Dataset(X_train, label=y_train_lgb)
+        # Format labels for survival analysis
+        # Use timeDiff as label
+        y_train_label = y_train['timeDiff'].values
+        
+        # Create LightGBM dataset
+        train_data = lgb.Dataset(X_train, label=y_train_label)
 
         # Train the model
         model = lgb.train(
             params,
             train_data,
-            num_boost_round=BOOSTING_ROUNDS,
+            num_boost_round=ROUNDS,
             valid_sets=[train_data],
-            callbacks=[lgb.log_evaluation(period=0)]  # suppress output
+            callbacks=[lgb.log_evaluation(period=0)]
         )
 
         print("Model trained successfully.")
 
         # --- generate and save predictions ---
         print(f"Generating predictions for {dataset_path}...")
-        predictions = -model.predict(X_test_processed)
+        predictions = model.predict(X_test_processed)
+        
+        # Negate predictions as required by competition
+        predictions_negated = -predictions
         
         # save predictions to a CSV file
         prediction_filename = dataset_path.replace(os.sep, '_') + '.csv'
         prediction_save_path = os.path.join(SUBMISSION_DIR, prediction_filename)
-        pd.DataFrame(predictions).to_csv(prediction_save_path, header=False, index=False)
+        pd.DataFrame(predictions_negated).to_csv(prediction_save_path, header=False, index=False)
         print(f"  -> Predictions saved to {prediction_save_path}")
+        print(f"  -> Prediction range: [{predictions_negated.min():.6f}, {predictions_negated.max():.6f}]")
         
     except Exception as e:
         print(f"\nERROR: The model for {dataset_path} failed to train.")
@@ -105,8 +109,8 @@ for index_event, outcome_event in event_pairs:
 print("\n\nAll prediction files have been generated.")
 
 
-## --- CREATE SUMBISSION FOLDER --- ##
-output_zip_filename = f'{BOOSTING_ROUNDS}_boost_lgb_without_fs'
+## --- CREATE SUBMISSION FOLDER --- ##
+output_zip_filename = f'{LR}_{ROUNDS}_boost_lgbm'
 shutil.make_archive(output_zip_filename, 'zip', SUBMISSION_DIR)
 print(f"Successfully created '{output_zip_filename}.zip' from the '{SUBMISSION_DIR}' directory.")
 print("You can now upload this file to the CodaBench competition.")

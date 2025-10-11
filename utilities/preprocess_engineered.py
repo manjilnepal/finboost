@@ -3,8 +3,6 @@ import pandas as pd
 import numpy as np
 import os
 import shutil
-from lifelines import CoxPHFitter
-from lifelines.exceptions import ConvergenceError
 from sklearn.preprocessing import StandardScaler
 from typing import Tuple, Optional
 
@@ -20,25 +18,46 @@ def preprocess(train_df_with_labels: pd.DataFrame,
     train_features = train_df_with_labels.drop(columns=["timeDiff", "status"])
 
     ### ------------ TRAIN FEATURE ENGINEERING --------- ###
-    # Borrow-to-Deposit ratio
+    # Original features
     train_features['borrow_to_deposit'] = np.where(train_features['userDepositSum'] > 0,
                                     train_features['userBorrowSum'] / train_features['userDepositSum'], 0)
 
-    # Liquidation-to-Borrow ratio
     train_features['liquidation_to_borrow'] = np.where(train_features['userBorrowSum'] > 0,
                                         train_features['userLiquidationSum'] / train_features['userBorrowSum'], 0)
 
-    # Repay-to-Borrow ratio
     train_features['repay_to_borrow'] = np.where(train_features['userBorrowSum'] > 0,
                                     train_features['userRepaySum'] / train_features['userBorrowSum'], 0)
+    
+    # New engineered features
+    train_features['leverage_ratio'] = np.where(
+        (train_features['userBorrowSum'] + train_features['userDepositSum']) > 0,
+        train_features['userBorrowSum'] / (train_features['userBorrowSum'] + train_features['userDepositSum']),
+        0
+    )
+
+    train_features['market_liquidation_risk'] = np.where(
+        train_features['marketBorrowSum'] > 0,
+        train_features['marketLiquidationSum'] / train_features['marketBorrowSum'],
+        0
+    )
+
+    train_features['transaction_frequency'] = (
+        train_features['userBorrowCount'] + train_features['userRepayCount'] + 
+        train_features['userWithdrawCount'] + train_features['userDepositCount']
+    )
+
+    train_features['liquidity_stress'] = np.where(
+        train_features['userDepositSum'] > 0,
+        (train_features['userBorrowSum'] - train_features['userRepaySum']) / train_features['userDepositSum'],
+        0
+    )
     
     # clean up infinities and NaNs
     train_features.replace([np.inf, -np.inf], 0, inplace=True)
     train_features.fillna(0, inplace=True)
-    print(f"-- Train Features Sucessfully Engineered! --")
+    print(f"-- Train Features Successfully Engineered! --")
 
     ### --- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX --- ###
-
 
     # columns to drop
     cols_to_drop = ["id", "user", "pool", "Index Event", "Outcome Event", "type", "timestamp"]
@@ -71,30 +90,51 @@ def preprocess(train_df_with_labels: pd.DataFrame,
     cols_to_keep = train_features_final.columns[train_features_final.var() != 0]
     train_features_final = train_features_final[cols_to_keep]
 
-
     test_processed_features = None
 
     if test_features_df is not None:
         # apply same preprocessing steps to test data
         test_features = test_features_df.drop(columns=cols_to_drop, errors="ignore")
 
-        ### ------------ TRAIN FEATURE ENGINEERING --------- ###
-        # Borrow-to-Deposit ratio
+        ### ------------ TEST FEATURE ENGINEERING --------- ###
+        # Original features
         test_features['borrow_to_deposit'] = np.where(test_features['userDepositSum'] > 0,
                                         test_features['userBorrowSum'] / test_features['userDepositSum'], 0)
 
-        # Liquidation-to-Borrow ratio
         test_features['liquidation_to_borrow'] = np.where(test_features['userBorrowSum'] > 0,
                                             test_features['userLiquidationSum'] / test_features['userBorrowSum'], 0)
 
-        # Repay-to-Borrow ratio
         test_features['repay_to_borrow'] = np.where(test_features['userBorrowSum'] > 0,
                                         test_features['userRepaySum'] / test_features['userBorrowSum'], 0)
         
+        # New engineered features (same as training)
+        test_features['leverage_ratio'] = np.where(
+            (test_features['userBorrowSum'] + test_features['userDepositSum']) > 0,
+            test_features['userBorrowSum'] / (test_features['userBorrowSum'] + test_features['userDepositSum']),
+            0
+        )
+
+        test_features['market_liquidation_risk'] = np.where(
+            test_features['marketBorrowSum'] > 0,
+            test_features['marketLiquidationSum'] / test_features['marketBorrowSum'],
+            0
+        )
+
+        test_features['transaction_frequency'] = (
+            test_features['userBorrowCount'] + test_features['userRepayCount'] + 
+            test_features['userWithdrawCount'] + test_features['userDepositCount']
+        )
+
+        test_features['liquidity_stress'] = np.where(
+            test_features['userDepositSum'] > 0,
+            (test_features['userBorrowSum'] - test_features['userRepaySum']) / test_features['userDepositSum'],
+            0
+        )
+
         # clean up infinities and NaNs
         test_features.replace([np.inf, -np.inf], 0, inplace=True)
         test_features.fillna(0, inplace=True)
-        print(f"-- Test Features Sucessfully Engineered! --")
+        print(f"-- Test Features Successfully Engineered! --")
 
         ### --- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX --- ###
 
@@ -110,7 +150,7 @@ def preprocess(train_df_with_labels: pd.DataFrame,
         train_cols = train_features_encoded.columns
         test_features_aligned = test_features_encoded.reindex(columns=train_cols, fill_value=0)
 
-        # # scale test features using training scaler
+        # scale test features using training scaler
         test_features_scaled = scaler.transform(test_features_aligned[numerical_cols])
 
         # create final processed test features
