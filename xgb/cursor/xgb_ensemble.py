@@ -144,7 +144,7 @@ def train_ensemble_models(X_train, y_train, X_test):
     
     # Ensemble predictions (weighted average)
     # Give more weight to your best performing model (Model 1)
-    weights = [0.3, 0.2, 0.2, 0.15, 0.15]  # Weighted towards Model 1
+    weights = [0.5, 0.2, 0.15, 0.1, 0.1]  # Weighted towards Model 1
     
     ensemble_predictions = np.average(predictions_list, axis=0, weights=weights)
     

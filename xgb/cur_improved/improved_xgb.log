@@ -1,0 +1,329 @@
+nohup: ignoring input
+
+============================================================
+Processing and Predicting for: Borrow -> Deposit
+============================================================
+Using parameters: {'objective': 'survival:cox', 'eval_metric': 'cox-nloglik', 'seed': 42, 'max_depth': 5, 'eta': 0.05, 'subsample': 0.7, 'colsample_bytree': 0.7, 'min_child_weight': 5, 'lambda': 3.0, 'alpha': 0.5, 'gamma': 0.2}
+Training for 1000 rounds...
+Training model...
+[0]	train-cox-nloglik:13.34425
+[100]	train-cox-nloglik:12.66474
+[200]	train-cox-nloglik:12.56195
+[300]	train-cox-nloglik:12.50789
+[400]	train-cox-nloglik:12.46868
+[500]	train-cox-nloglik:12.43815
+[600]	train-cox-nloglik:12.41397
+[700]	train-cox-nloglik:12.39217
+[800]	train-cox-nloglik:12.37444
+[900]	train-cox-nloglik:12.35822
+[999]	train-cox-nloglik:12.34446
+  - Model trained successfully.
+Generating predictions for Borrow/Deposit...
+  -> Predictions saved to improved_transition_specific_xgb/Borrow_Deposit.csv
+
+============================================================
+Processing and Predicting for: Borrow -> Repay
+============================================================
+Using parameters: {'objective': 'survival:cox', 'eval_metric': 'cox-nloglik', 'seed': 42, 'max_depth': 5, 'eta': 0.05, 'subsample': 0.7, 'colsample_bytree': 0.7, 'min_child_weight': 5, 'lambda': 3.0, 'alpha': 0.5, 'gamma': 0.2}
+Training for 1000 rounds...
+Training model...
+[0]	train-cox-nloglik:12.88923
+[100]	train-cox-nloglik:12.07073
+[200]	train-cox-nloglik:12.02893
+[300]	train-cox-nloglik:12.01661
+[400]	train-cox-nloglik:12.00872
+[500]	train-cox-nloglik:12.00248
+[600]	train-cox-nloglik:11.99660
+[700]	train-cox-nloglik:11.99149
+[800]	train-cox-nloglik:11.98692
+[900]	train-cox-nloglik:11.98255
+[999]	train-cox-nloglik:11.97828
+  - Model trained successfully.
+Generating predictions for Borrow/Repay...
+  -> Predictions saved to improved_transition_specific_xgb/Borrow_Repay.csv
+
+============================================================
+Processing and Predicting for: Borrow -> Withdraw
+============================================================
+Using parameters: {'objective': 'survival:cox', 'eval_metric': 'cox-nloglik', 'seed': 42, 'max_depth': 4, 'eta': 0.06, 'subsample': 0.6, 'colsample_bytree': 0.6, 'min_child_weight': 7, 'lambda': 4.0, 'alpha': 0.7, 'gamma': 0.3}
+Training for 1200 rounds...
+Training model...
+[0]	train-cox-nloglik:13.39237
+[100]	train-cox-nloglik:12.70487
+[200]	train-cox-nloglik:12.59420
+[300]	train-cox-nloglik:12.53534
+[400]	train-cox-nloglik:12.49242
+[500]	train-cox-nloglik:12.46168
+[600]	train-cox-nloglik:12.43322
+[700]	train-cox-nloglik:12.40948
+[800]	train-cox-nloglik:12.38931
+[900]	train-cox-nloglik:12.37318
+[1000]	train-cox-nloglik:12.35823
+[1100]	train-cox-nloglik:12.34366
+[1199]	train-cox-nloglik:12.33124
+  - Model trained successfully.
+Generating predictions for Borrow/Withdraw...
+  -> Predictions saved to improved_transition_specific_xgb/Borrow_Withdraw.csv
+
+============================================================
+Processing and Predicting for: Borrow -> Liquidated
+============================================================
+Using parameters: {'objective': 'survival:cox', 'eval_metric': 'cox-nloglik', 'seed': 42, 'max_depth': 4, 'eta': 0.06, 'subsample': 0.6, 'colsample_bytree': 0.6, 'min_child_weight': 7, 'lambda': 4.0, 'alpha': 0.7, 'gamma': 0.3}
+Training for 1200 rounds...
+Training model...
+[0]	train-cox-nloglik:12.99206
+[100]	train-cox-nloglik:11.53098
+[200]	train-cox-nloglik:11.16924
+[300]	train-cox-nloglik:10.96186
+[400]	train-cox-nloglik:10.80092
+[500]	train-cox-nloglik:10.66805
+[600]	train-cox-nloglik:10.57032
+[700]	train-cox-nloglik:10.48153
+[800]	train-cox-nloglik:10.40236
+[900]	train-cox-nloglik:10.33252
+[1000]	train-cox-nloglik:10.27216
+[1100]	train-cox-nloglik:10.21473
+[1199]	train-cox-nloglik:10.15780
+  - Model trained successfully.
+Generating predictions for Borrow/Liquidated...
+  -> Predictions saved to improved_transition_specific_xgb/Borrow_Liquidated.csv
+
+============================================================
+Processing and Predicting for: Deposit -> Borrow
+============================================================
+Using parameters: {'objective': 'survival:cox', 'eval_metric': 'cox-nloglik', 'seed': 42, 'max_depth': 6, 'eta': 0.03, 'subsample': 0.8, 'colsample_bytree': 0.8, 'min_child_weight': 3, 'lambda': 2.0, 'alpha': 0.3, 'gamma': 0.1}
+Training for 800 rounds...
+Training model...
+[0]	train-cox-nloglik:14.29913
+[100]	train-cox-nloglik:13.05744
+[200]	train-cox-nloglik:12.97653
+[300]	train-cox-nloglik:12.92174
+[400]	train-cox-nloglik:12.88234
+[500]	train-cox-nloglik:12.85160
+[600]	train-cox-nloglik:12.82676
+[700]	train-cox-nloglik:12.80417
+[799]	train-cox-nloglik:12.78238
+  - Model trained successfully.
+Generating predictions for Deposit/Borrow...
+  -> Predictions saved to improved_transition_specific_xgb/Deposit_Borrow.csv
+
+============================================================
+Processing and Predicting for: Deposit -> Repay
+============================================================
+Using parameters: {'objective': 'survival:cox', 'eval_metric': 'cox-nloglik', 'seed': 42, 'max_depth': 6, 'eta': 0.03, 'subsample': 0.8, 'colsample_bytree': 0.8, 'min_child_weight': 3, 'lambda': 2.0, 'alpha': 0.3, 'gamma': 0.1}
+Training for 800 rounds...
+Training model...
+[0]	train-cox-nloglik:14.28468
+[100]	train-cox-nloglik:13.00878
+[200]	train-cox-nloglik:12.93158
+[300]	train-cox-nloglik:12.87005
+[400]	train-cox-nloglik:12.82313
+[500]	train-cox-nloglik:12.79059
+[600]	train-cox-nloglik:12.76178
+[700]	train-cox-nloglik:12.73737
+[799]	train-cox-nloglik:12.71447
+  - Model trained successfully.
+Generating predictions for Deposit/Repay...
+  -> Predictions saved to improved_transition_specific_xgb/Deposit_Repay.csv
+
+============================================================
+Processing and Predicting for: Deposit -> Withdraw
+============================================================
+Using parameters: {'objective': 'survival:cox', 'eval_metric': 'cox-nloglik', 'seed': 42, 'max_depth': 6, 'eta': 0.03, 'subsample': 0.8, 'colsample_bytree': 0.8, 'min_child_weight': 3, 'lambda': 2.0, 'alpha': 0.3, 'gamma': 0.1}
+Training for 800 rounds...
+Training model...
+[0]	train-cox-nloglik:14.07152
+[100]	train-cox-nloglik:13.10270
+[200]	train-cox-nloglik:13.01443
+[300]	train-cox-nloglik:12.97808
+[400]	train-cox-nloglik:12.95587
+[500]	train-cox-nloglik:12.94035
+[600]	train-cox-nloglik:12.92814
+[700]	train-cox-nloglik:12.91705
+[799]	train-cox-nloglik:12.90801
+  - Model trained successfully.
+Generating predictions for Deposit/Withdraw...
+  -> Predictions saved to improved_transition_specific_xgb/Deposit_Withdraw.csv
+
+============================================================
+Processing and Predicting for: Deposit -> Liquidated
+============================================================
+Using parameters: {'objective': 'survival:cox', 'eval_metric': 'cox-nloglik', 'seed': 42, 'max_depth': 7, 'eta': 0.025, 'subsample': 0.85, 'colsample_bytree': 0.85, 'min_child_weight': 2, 'lambda': 1.5, 'alpha': 0.2, 'gamma': 0.0}
+Training for 700 rounds...
+Training model...
+[0]	train-cox-nloglik:14.10590
+[100]	train-cox-nloglik:12.56242
+[200]	train-cox-nloglik:12.40297
+[300]	train-cox-nloglik:12.26521
+[400]	train-cox-nloglik:12.13530
+[500]	train-cox-nloglik:12.03758
+[600]	train-cox-nloglik:11.95706
+[699]	train-cox-nloglik:11.89712
+  - Model trained successfully.
+Generating predictions for Deposit/Liquidated...
+  -> Predictions saved to improved_transition_specific_xgb/Deposit_Liquidated.csv
+
+============================================================
+Processing and Predicting for: Repay -> Borrow
+============================================================
+Using parameters: {'objective': 'survival:cox', 'eval_metric': 'cox-nloglik', 'seed': 42, 'max_depth': 5, 'eta': 0.05, 'subsample': 0.7, 'colsample_bytree': 0.7, 'min_child_weight': 5, 'lambda': 3.0, 'alpha': 0.5, 'gamma': 0.2}
+Training for 1000 rounds...
+Training model...
+[0]	train-cox-nloglik:12.84182
+[100]	train-cox-nloglik:12.16542
+[200]	train-cox-nloglik:12.12669
+[300]	train-cox-nloglik:12.10875
+[400]	train-cox-nloglik:12.09533
+[500]	train-cox-nloglik:12.08465
+[600]	train-cox-nloglik:12.07498
+[700]	train-cox-nloglik:12.06688
+[800]	train-cox-nloglik:12.05949
+[900]	train-cox-nloglik:12.05263
+[999]	train-cox-nloglik:12.04659
+  - Model trained successfully.
+Generating predictions for Repay/Borrow...
+  -> Predictions saved to improved_transition_specific_xgb/Repay_Borrow.csv
+
+============================================================
+Processing and Predicting for: Repay -> Deposit
+============================================================
+Using parameters: {'objective': 'survival:cox', 'eval_metric': 'cox-nloglik', 'seed': 42, 'max_depth': 5, 'eta': 0.05, 'subsample': 0.7, 'colsample_bytree': 0.7, 'min_child_weight': 5, 'lambda': 3.0, 'alpha': 0.5, 'gamma': 0.2}
+Training for 1000 rounds...
+Training model...
+[0]	train-cox-nloglik:13.22197
+[100]	train-cox-nloglik:12.47912
+[200]	train-cox-nloglik:12.37611
+[300]	train-cox-nloglik:12.31613
+[400]	train-cox-nloglik:12.27485
+[500]	train-cox-nloglik:12.24291
+[600]	train-cox-nloglik:12.21821
+[700]	train-cox-nloglik:12.19626
+[800]	train-cox-nloglik:12.17728
+[900]	train-cox-nloglik:12.16086
+[999]	train-cox-nloglik:12.14575
+  - Model trained successfully.
+Generating predictions for Repay/Deposit...
+  -> Predictions saved to improved_transition_specific_xgb/Repay_Deposit.csv
+
+============================================================
+Processing and Predicting for: Repay -> Withdraw
+============================================================
+Using parameters: {'objective': 'survival:cox', 'eval_metric': 'cox-nloglik', 'seed': 42, 'max_depth': 4, 'eta': 0.06, 'subsample': 0.6, 'colsample_bytree': 0.6, 'min_child_weight': 7, 'lambda': 4.0, 'alpha': 0.7, 'gamma': 0.3}
+Training for 1200 rounds...
+Training model...
+[0]	train-cox-nloglik:13.27189
+[100]	train-cox-nloglik:12.56748
+[200]	train-cox-nloglik:12.45781
+[300]	train-cox-nloglik:12.39713
+[400]	train-cox-nloglik:12.35395
+[500]	train-cox-nloglik:12.32121
+[600]	train-cox-nloglik:12.29612
+[700]	train-cox-nloglik:12.27502
+[800]	train-cox-nloglik:12.25593
+[900]	train-cox-nloglik:12.23876
+[1000]	train-cox-nloglik:12.22464
+[1100]	train-cox-nloglik:12.21041
+[1199]	train-cox-nloglik:12.19742
+  - Model trained successfully.
+Generating predictions for Repay/Withdraw...
+  -> Predictions saved to improved_transition_specific_xgb/Repay_Withdraw.csv
+
+============================================================
+Processing and Predicting for: Repay -> Liquidated
+============================================================
+Using parameters: {'objective': 'survival:cox', 'eval_metric': 'cox-nloglik', 'seed': 42, 'max_depth': 4, 'eta': 0.06, 'subsample': 0.6, 'colsample_bytree': 0.6, 'min_child_weight': 7, 'lambda': 4.0, 'alpha': 0.7, 'gamma': 0.3}
+Training for 1200 rounds...
+Training model...
+[0]	train-cox-nloglik:13.06621
+[100]	train-cox-nloglik:11.39226
+[200]	train-cox-nloglik:11.04937
+[300]	train-cox-nloglik:10.82136
+[400]	train-cox-nloglik:10.66328
+[500]	train-cox-nloglik:10.52611
+[600]	train-cox-nloglik:10.41297
+[700]	train-cox-nloglik:10.31462
+[800]	train-cox-nloglik:10.22541
+[900]	train-cox-nloglik:10.14315
+[1000]	train-cox-nloglik:10.07426
+[1100]	train-cox-nloglik:10.01309
+[1199]	train-cox-nloglik:9.95244
+  - Model trained successfully.
+Generating predictions for Repay/Liquidated...
+  -> Predictions saved to improved_transition_specific_xgb/Repay_Liquidated.csv
+
+============================================================
+Processing and Predicting for: Withdraw -> Borrow
+============================================================
+Using parameters: {'objective': 'survival:cox', 'eval_metric': 'cox-nloglik', 'seed': 42, 'max_depth': 7, 'eta': 0.025, 'subsample': 0.85, 'colsample_bytree': 0.85, 'min_child_weight': 2, 'lambda': 1.5, 'alpha': 0.2, 'gamma': 0.0}
+Training for 700 rounds...
+Training model...
+[0]	train-cox-nloglik:13.76705
+[100]	train-cox-nloglik:11.58677
+[200]	train-cox-nloglik:11.43709
+[300]	train-cox-nloglik:11.37935
+[400]	train-cox-nloglik:11.32487
+[500]	train-cox-nloglik:11.27656
+[600]	train-cox-nloglik:11.23710
+[699]	train-cox-nloglik:11.20075
+  - Model trained successfully.
+Generating predictions for Withdraw/Borrow...
+  -> Predictions saved to improved_transition_specific_xgb/Withdraw_Borrow.csv
+
+============================================================
+Processing and Predicting for: Withdraw -> Deposit
+============================================================
+Using parameters: {'objective': 'survival:cox', 'eval_metric': 'cox-nloglik', 'seed': 42, 'max_depth': 6, 'eta': 0.03, 'subsample': 0.8, 'colsample_bytree': 0.8, 'min_child_weight': 3, 'lambda': 2.0, 'alpha': 0.3, 'gamma': 0.1}
+Training for 800 rounds...
+Training model...
+[0]	train-cox-nloglik:13.73291
+[100]	train-cox-nloglik:12.24710
+[200]	train-cox-nloglik:12.11835
+[300]	train-cox-nloglik:12.07907
+[400]	train-cox-nloglik:12.05634
+[500]	train-cox-nloglik:12.04085
+[600]	train-cox-nloglik:12.02861
+[700]	train-cox-nloglik:12.01774
+[799]	train-cox-nloglik:12.00894
+  - Model trained successfully.
+Generating predictions for Withdraw/Deposit...
+  -> Predictions saved to improved_transition_specific_xgb/Withdraw_Deposit.csv
+
+============================================================
+Processing and Predicting for: Withdraw -> Repay
+============================================================
+Using parameters: {'objective': 'survival:cox', 'eval_metric': 'cox-nloglik', 'seed': 42, 'max_depth': 7, 'eta': 0.025, 'subsample': 0.85, 'colsample_bytree': 0.85, 'min_child_weight': 2, 'lambda': 1.5, 'alpha': 0.2, 'gamma': 0.0}
+Training for 700 rounds...
+Training model...
+[0]	train-cox-nloglik:13.83615
+[100]	train-cox-nloglik:11.88907
+[200]	train-cox-nloglik:11.80556
+[300]	train-cox-nloglik:11.74562
+[400]	train-cox-nloglik:11.67436
+[500]	train-cox-nloglik:11.61719
+[600]	train-cox-nloglik:11.57066
+[699]	train-cox-nloglik:11.53129
+  - Model trained successfully.
+Generating predictions for Withdraw/Repay...
+  -> Predictions saved to improved_transition_specific_xgb/Withdraw_Repay.csv
+
+============================================================
+Processing and Predicting for: Withdraw -> Liquidated
+============================================================
+Using parameters: {'objective': 'survival:cox', 'eval_metric': 'cox-nloglik', 'seed': 42, 'max_depth': 8, 'eta': 0.02, 'subsample': 0.9, 'colsample_bytree': 0.9, 'min_child_weight': 1, 'lambda': 1.0, 'alpha': 0.1, 'gamma': 0.0}
+Training for 600 rounds...
+Training model...
+[0]	train-cox-nloglik:13.29565
+[100]	train-cox-nloglik:10.68048
+[200]	train-cox-nloglik:10.40667
+[300]	train-cox-nloglik:10.25077
+[400]	train-cox-nloglik:10.11609
+[500]	train-cox-nloglik:9.94157
+[599]	train-cox-nloglik:9.80361
+  - Model trained successfully.
+Generating predictions for Withdraw/Liquidated...
+  -> Predictions saved to improved_transition_specific_xgb/Withdraw_Liquidated.csv
+
+
+All prediction files have been generated.
+Successfully created 'improved_transition_specific_xgb.zip' from the 'improved_transition_specific_xgb' directory.
+You can now upload this file to the CodaBench competition.

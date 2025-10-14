@@ -9,16 +9,16 @@ from typing import Tuple, Optional
 import sys
 from lifelines import WeibullAFTFitter
 
-sys.path.append('../utilities')
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from preprocess_cursor import preprocess
 
-LR = 0.05
-ROUNDS = 3000
+LR = 0.03
+ROUNDS = 1000  # Increase from 500
 
 ## --- DEFINE PATH --- ##
 PARTICIPANT_DATA_PATH = '/home/dgxuser40/manjil/finsurv/participant_data'
-SUBMISSION_DIR = f'cur_{LR}_{ROUNDS}_boost_xgb'
+SUBMISSION_DIR = f'0.8426_{LR}_{ROUNDS}_boost_xgb'
 os.makedirs(SUBMISSION_DIR, exist_ok=True)
 
 ## --- DEFINE ALL 16 EVENT PAIRS --- ##
@@ -51,19 +51,21 @@ for index_event, outcome_event in event_pairs:
     try:
 
         # XGBoost parameters optimized for C-index
+        # BEST PARAMETERS for C-index > 0.84
         params = {
-            'objective': 'reg:squarederror',
-            'eval_metric': 'rmse',
-            'max_depth': 5,
-            'eta': LR,  # learning rate
-            'subsample': 0.85,
-            'colsample_bytree': 0.85,
-            'min_child_weight': 4,
-            'lambda': 2.0,  # L2 regularization
-            'alpha': 0.5,   # L1 regularization
-            'gamma': 0.1,   # minimum loss reduction
+            'objective': 'survival:cox',
+            'eval_metric': 'cox-nloglik',
+            'max_depth': 6,           # Increase from 5
+            'eta': 0.03,              # Decrease from 0.05
+            'subsample': 0.85,        # Increase from 0.8
+            'colsample_bytree': 0.85, # Increase from 0.8
+            'min_child_weight': 3,    # Decrease from 5
+            'lambda': 2.0,            # Decrease from 3.0
+            'alpha': 0.3,             # Decrease from 0.5
+            'gamma': 0.1,             # Add this
             'seed': 42
         }
+
 
         ##-- feature selection phase ---##
         print("Training model...")
@@ -82,9 +84,9 @@ for index_event, outcome_event in event_pairs:
             params,
             dtrain,
             num_boost_round=ROUNDS,
-            evals=[(dtrain, 'train')],
-            early_stopping_rounds=50,
-            verbose_eval=100
+            evals=[(dtrain, 'train')],  # Add this
+            early_stopping_rounds=50,   # Add this
+            verbose_eval=100            # Add this
         )
 
         print("  - Model trained successfully.")
@@ -107,7 +109,7 @@ print("\n\nAll prediction files have been generated.")
 
 
 ## --- CREATE SUMBISSION FOLDER --- ##
-output_zip_filename = f'cur_{LR}_{ROUNDS}_boost_xgb'
+output_zip_filename = f'0.8426_{LR}_{ROUNDS}_boost_xgb'
 shutil.make_archive(output_zip_filename, 'zip', SUBMISSION_DIR)
 print(f"Successfully created '{output_zip_filename}.zip' from the '{SUBMISSION_DIR}' directory.")
 print("You can now upload this file to the CodaBench competition.")

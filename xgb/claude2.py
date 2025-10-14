@@ -21,7 +21,7 @@ BASE_PARAMS = {
     'max_depth': 8,
     
     # Learning rate - balance between speed and accuracy
-    'eta': 0.03,
+    'eta': 0.05,
     
     # Sampling parameters - prevent overfitting
     'subsample': 0.85,
@@ -42,7 +42,7 @@ BASE_PARAMS = {
     'grow_policy': 'lossguide',
 }
 
-NUM_BOOST_ROUND = 800
+NUM_BOOST_ROUND = 1000
 EARLY_STOPPING_ROUNDS = 50
 VALIDATION_SIZE = 0.15
 

@@ -1,0 +1,278 @@
+nohup: ignoring input
+
+==================================================
+Processing and Predicting for: Borrow -> Deposit
+==================================================
+Training model...
+[0]	train-cox-nloglik:13.35385
+[100]	train-cox-nloglik:12.67543
+[200]	train-cox-nloglik:12.56498
+[300]	train-cox-nloglik:12.50186
+[400]	train-cox-nloglik:12.45992
+[500]	train-cox-nloglik:12.42727
+[600]	train-cox-nloglik:12.40188
+[700]	train-cox-nloglik:12.37781
+[799]	train-cox-nloglik:12.35755
+  - Model trained successfully.
+Generating predictions for Borrow/Deposit...
+  -> Predictions saved to 0.8426_0.03_800_boost_xgb/Borrow_Deposit.csv
+
+==================================================
+Processing and Predicting for: Borrow -> Repay
+==================================================
+Training model...
+[0]	train-cox-nloglik:12.92499
+[100]	train-cox-nloglik:12.11640
+[200]	train-cox-nloglik:12.03639
+[300]	train-cox-nloglik:12.01191
+[400]	train-cox-nloglik:12.00012
+[500]	train-cox-nloglik:11.99264
+[600]	train-cox-nloglik:11.98626
+[700]	train-cox-nloglik:11.98081
+[799]	train-cox-nloglik:11.97606
+  - Model trained successfully.
+Generating predictions for Borrow/Repay...
+  -> Predictions saved to 0.8426_0.03_800_boost_xgb/Borrow_Repay.csv
+
+==================================================
+Processing and Predicting for: Borrow -> Withdraw
+==================================================
+Training model...
+[0]	train-cox-nloglik:13.38773
+[100]	train-cox-nloglik:12.67534
+[200]	train-cox-nloglik:12.54637
+[300]	train-cox-nloglik:12.47767
+[400]	train-cox-nloglik:12.42479
+[500]	train-cox-nloglik:12.38322
+[600]	train-cox-nloglik:12.34965
+[700]	train-cox-nloglik:12.32048
+[799]	train-cox-nloglik:12.29667
+  - Model trained successfully.
+Generating predictions for Borrow/Withdraw...
+  -> Predictions saved to 0.8426_0.03_800_boost_xgb/Borrow_Withdraw.csv
+
+==================================================
+Processing and Predicting for: Borrow -> Liquidated
+==================================================
+Training model...
+[0]	train-cox-nloglik:12.99789
+[100]	train-cox-nloglik:11.31642
+[200]	train-cox-nloglik:10.93779
+[300]	train-cox-nloglik:10.64049
+[400]	train-cox-nloglik:10.44678
+[500]	train-cox-nloglik:10.29005
+[600]	train-cox-nloglik:10.15424
+[700]	train-cox-nloglik:10.04560
+[799]	train-cox-nloglik:9.94557
+  - Model trained successfully.
+Generating predictions for Borrow/Liquidated...
+  -> Predictions saved to 0.8426_0.03_800_boost_xgb/Borrow_Liquidated.csv
+
+==================================================
+Processing and Predicting for: Deposit -> Borrow
+==================================================
+Training model...
+[0]	train-cox-nloglik:14.29902
+[100]	train-cox-nloglik:13.05510
+[200]	train-cox-nloglik:12.97686
+[300]	train-cox-nloglik:12.92111
+[400]	train-cox-nloglik:12.88273
+[500]	train-cox-nloglik:12.85348
+[600]	train-cox-nloglik:12.82784
+[700]	train-cox-nloglik:12.80299
+[799]	train-cox-nloglik:12.78179
+  - Model trained successfully.
+Generating predictions for Deposit/Borrow...
+  -> Predictions saved to 0.8426_0.03_800_boost_xgb/Deposit_Borrow.csv
+
+==================================================
+Processing and Predicting for: Deposit -> Repay
+==================================================
+Training model...
+[0]	train-cox-nloglik:14.28511
+[100]	train-cox-nloglik:13.01155
+[200]	train-cox-nloglik:12.92720
+[300]	train-cox-nloglik:12.86715
+[400]	train-cox-nloglik:12.82570
+[500]	train-cox-nloglik:12.79244
+[600]	train-cox-nloglik:12.76245
+[700]	train-cox-nloglik:12.74026
+[799]	train-cox-nloglik:12.71701
+  - Model trained successfully.
+Generating predictions for Deposit/Repay...
+  -> Predictions saved to 0.8426_0.03_800_boost_xgb/Deposit_Repay.csv
+
+==================================================
+Processing and Predicting for: Deposit -> Withdraw
+==================================================
+Training model...
+[0]	train-cox-nloglik:14.07121
+[100]	train-cox-nloglik:13.11328
+[200]	train-cox-nloglik:13.02137
+[300]	train-cox-nloglik:12.98161
+[400]	train-cox-nloglik:12.95863
+[500]	train-cox-nloglik:12.94209
+[600]	train-cox-nloglik:12.92941
+[700]	train-cox-nloglik:12.91888
+[799]	train-cox-nloglik:12.90866
+  - Model trained successfully.
+Generating predictions for Deposit/Withdraw...
+  -> Predictions saved to 0.8426_0.03_800_boost_xgb/Deposit_Withdraw.csv
+
+==================================================
+Processing and Predicting for: Deposit -> Liquidated
+==================================================
+Training model...
+[0]	train-cox-nloglik:14.09091
+[100]	train-cox-nloglik:12.67896
+[200]	train-cox-nloglik:12.53034
+[300]	train-cox-nloglik:12.37696
+[400]	train-cox-nloglik:12.26814
+[500]	train-cox-nloglik:12.18237
+[600]	train-cox-nloglik:12.11333
+[700]	train-cox-nloglik:12.05130
+[799]	train-cox-nloglik:12.00264
+  - Model trained successfully.
+Generating predictions for Deposit/Liquidated...
+  -> Predictions saved to 0.8426_0.03_800_boost_xgb/Deposit_Liquidated.csv
+
+==================================================
+Processing and Predicting for: Repay -> Borrow
+==================================================
+Training model...
+[0]	train-cox-nloglik:12.86259
+[100]	train-cox-nloglik:12.19251
+[200]	train-cox-nloglik:12.12710
+[300]	train-cox-nloglik:12.10251
+[400]	train-cox-nloglik:12.08735
+[500]	train-cox-nloglik:12.07568
+[600]	train-cox-nloglik:12.06541
+[700]	train-cox-nloglik:12.05625
+[799]	train-cox-nloglik:12.04806
+  - Model trained successfully.
+Generating predictions for Repay/Borrow...
+  -> Predictions saved to 0.8426_0.03_800_boost_xgb/Repay_Borrow.csv
+
+==================================================
+Processing and Predicting for: Repay -> Deposit
+==================================================
+Training model...
+[0]	train-cox-nloglik:13.24808
+[100]	train-cox-nloglik:12.48478
+[200]	train-cox-nloglik:12.38584
+[300]	train-cox-nloglik:12.31912
+[400]	train-cox-nloglik:12.27314
+[500]	train-cox-nloglik:12.23981
+[600]	train-cox-nloglik:12.21354
+[700]	train-cox-nloglik:12.18859
+[799]	train-cox-nloglik:12.16661
+  - Model trained successfully.
+Generating predictions for Repay/Deposit...
+  -> Predictions saved to 0.8426_0.03_800_boost_xgb/Repay_Deposit.csv
+
+==================================================
+Processing and Predicting for: Repay -> Withdraw
+==================================================
+Training model...
+[0]	train-cox-nloglik:13.28195
+[100]	train-cox-nloglik:12.53596
+[200]	train-cox-nloglik:12.41009
+[300]	train-cox-nloglik:12.33966
+[400]	train-cox-nloglik:12.28365
+[500]	train-cox-nloglik:12.24467
+[600]	train-cox-nloglik:12.21245
+[700]	train-cox-nloglik:12.18685
+[799]	train-cox-nloglik:12.16285
+  - Model trained successfully.
+Generating predictions for Repay/Withdraw...
+  -> Predictions saved to 0.8426_0.03_800_boost_xgb/Repay_Withdraw.csv
+
+==================================================
+Processing and Predicting for: Repay -> Liquidated
+==================================================
+Training model...
+[0]	train-cox-nloglik:13.08710
+[100]	train-cox-nloglik:11.17227
+[200]	train-cox-nloglik:10.83691
+[300]	train-cox-nloglik:10.51592
+[400]	train-cox-nloglik:10.27895
+[500]	train-cox-nloglik:10.12039
+[600]	train-cox-nloglik:9.96764
+[700]	train-cox-nloglik:9.83747
+[799]	train-cox-nloglik:9.72568
+  - Model trained successfully.
+Generating predictions for Repay/Liquidated...
+  -> Predictions saved to 0.8426_0.03_800_boost_xgb/Repay_Liquidated.csv
+
+==================================================
+Processing and Predicting for: Withdraw -> Borrow
+==================================================
+Training model...
+[0]	train-cox-nloglik:13.70773
+[100]	train-cox-nloglik:11.58367
+[200]	train-cox-nloglik:11.47335
+[300]	train-cox-nloglik:11.41624
+[400]	train-cox-nloglik:11.36504
+[500]	train-cox-nloglik:11.32098
+[600]	train-cox-nloglik:11.28546
+[700]	train-cox-nloglik:11.25318
+[799]	train-cox-nloglik:11.22549
+  - Model trained successfully.
+Generating predictions for Withdraw/Borrow...
+  -> Predictions saved to 0.8426_0.03_800_boost_xgb/Withdraw_Borrow.csv
+
+==================================================
+Processing and Predicting for: Withdraw -> Deposit
+==================================================
+Training model...
+[0]	train-cox-nloglik:13.73270
+[100]	train-cox-nloglik:12.24818
+[200]	train-cox-nloglik:12.11732
+[300]	train-cox-nloglik:12.07829
+[400]	train-cox-nloglik:12.05650
+[500]	train-cox-nloglik:12.04069
+[600]	train-cox-nloglik:12.02886
+[700]	train-cox-nloglik:12.01851
+[799]	train-cox-nloglik:12.00901
+  - Model trained successfully.
+Generating predictions for Withdraw/Deposit...
+  -> Predictions saved to 0.8426_0.03_800_boost_xgb/Withdraw_Deposit.csv
+
+==================================================
+Processing and Predicting for: Withdraw -> Repay
+==================================================
+Training model...
+[0]	train-cox-nloglik:13.81006
+[100]	train-cox-nloglik:11.92854
+[200]	train-cox-nloglik:11.85544
+[300]	train-cox-nloglik:11.78610
+[400]	train-cox-nloglik:11.72893
+[500]	train-cox-nloglik:11.68314
+[600]	train-cox-nloglik:11.64686
+[700]	train-cox-nloglik:11.61201
+[799]	train-cox-nloglik:11.58332
+  - Model trained successfully.
+Generating predictions for Withdraw/Repay...
+  -> Predictions saved to 0.8426_0.03_800_boost_xgb/Withdraw_Repay.csv
+
+==================================================
+Processing and Predicting for: Withdraw -> Liquidated
+==================================================
+Training model...
+[0]	train-cox-nloglik:13.29201
+[100]	train-cox-nloglik:11.07475
+[200]	train-cox-nloglik:10.84258
+[300]	train-cox-nloglik:10.62379
+[400]	train-cox-nloglik:10.46067
+[500]	train-cox-nloglik:10.33579
+[600]	train-cox-nloglik:10.23364
+[700]	train-cox-nloglik:10.14029
+[799]	train-cox-nloglik:10.05928
+  - Model trained successfully.
+Generating predictions for Withdraw/Liquidated...
+  -> Predictions saved to 0.8426_0.03_800_boost_xgb/Withdraw_Liquidated.csv
+
+
+All prediction files have been generated.
+Successfully created '0.8426_0.03_800_boost_xgb.zip' from the '0.8426_0.03_800_boost_xgb' directory.
+You can now upload this file to the CodaBench competition.

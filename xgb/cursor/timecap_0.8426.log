@@ -1,0 +1,326 @@
+nohup: ignoring input
+
+==================================================
+Processing and Predicting for: Borrow -> Deposit
+==================================================
+Training model...
+Cap Value: 70,467,169
+Events converted to censored: 4
+After capping - Min: 2, Max: 70467169, Median: 14637469
+[0]	train-cox-nloglik:13.35390
+[100]	train-cox-nloglik:12.67563
+[200]	train-cox-nloglik:12.56828
+[300]	train-cox-nloglik:12.50250
+[400]	train-cox-nloglik:12.46078
+[500]	train-cox-nloglik:12.42832
+[600]	train-cox-nloglik:12.40204
+[700]	train-cox-nloglik:12.37858
+[799]	train-cox-nloglik:12.35873
+  - Model trained successfully.
+Generating predictions for Borrow/Deposit...
+  -> Predictions saved to 0.8426_timecap_0.03_800_boost_xgb/Borrow_Deposit.csv
+
+==================================================
+Processing and Predicting for: Borrow -> Repay
+==================================================
+Training model...
+Cap Value: 58,344,358
+Events converted to censored: 235
+After capping - Min: 2, Max: 58344358, Median: 70717
+[0]	train-cox-nloglik:12.92627
+[100]	train-cox-nloglik:12.11751
+[200]	train-cox-nloglik:12.03739
+[300]	train-cox-nloglik:12.01320
+[400]	train-cox-nloglik:12.00155
+[500]	train-cox-nloglik:11.99408
+[600]	train-cox-nloglik:11.98770
+[700]	train-cox-nloglik:11.98224
+[799]	train-cox-nloglik:11.97745
+  - Model trained successfully.
+Generating predictions for Borrow/Repay...
+  -> Predictions saved to 0.8426_timecap_0.03_800_boost_xgb/Borrow_Repay.csv
+
+==================================================
+Processing and Predicting for: Borrow -> Withdraw
+==================================================
+Training model...
+Cap Value: 70,583,601
+Events converted to censored: 2
+After capping - Min: 2, Max: 70583601, Median: 22564514
+[0]	train-cox-nloglik:13.38776
+[100]	train-cox-nloglik:12.67536
+[200]	train-cox-nloglik:12.54614
+[300]	train-cox-nloglik:12.47480
+[400]	train-cox-nloglik:12.42051
+[500]	train-cox-nloglik:12.38003
+[600]	train-cox-nloglik:12.34636
+[700]	train-cox-nloglik:12.31792
+[799]	train-cox-nloglik:12.29498
+  - Model trained successfully.
+Generating predictions for Borrow/Withdraw...
+  -> Predictions saved to 0.8426_timecap_0.03_800_boost_xgb/Borrow_Withdraw.csv
+
+==================================================
+Processing and Predicting for: Borrow -> Liquidated
+==================================================
+Training model...
+Cap Value: 71,527,339
+Events converted to censored: 4
+After capping - Min: 1522, Max: 71527339, Median: 41084967
+[0]	train-cox-nloglik:12.99845
+[100]	train-cox-nloglik:11.31645
+[200]	train-cox-nloglik:10.93760
+[300]	train-cox-nloglik:10.63926
+[400]	train-cox-nloglik:10.42668
+[500]	train-cox-nloglik:10.26831
+[600]	train-cox-nloglik:10.13911
+[700]	train-cox-nloglik:10.03192
+[799]	train-cox-nloglik:9.93800
+  - Model trained successfully.
+Generating predictions for Borrow/Liquidated...
+  -> Predictions saved to 0.8426_timecap_0.03_800_boost_xgb/Borrow_Liquidated.csv
+
+==================================================
+Processing and Predicting for: Deposit -> Borrow
+==================================================
+Training model...
+Cap Value: 68,703,712
+Events converted to censored: 35
+After capping - Min: 2, Max: 68703712, Median: 24055466
+[0]	train-cox-nloglik:14.29940
+[100]	train-cox-nloglik:13.05676
+[200]	train-cox-nloglik:12.97882
+[300]	train-cox-nloglik:12.92781
+[400]	train-cox-nloglik:12.88814
+[500]	train-cox-nloglik:12.85893
+[600]	train-cox-nloglik:12.83398
+[700]	train-cox-nloglik:12.80552
+[799]	train-cox-nloglik:12.78390
+  - Model trained successfully.
+Generating predictions for Deposit/Borrow...
+  -> Predictions saved to 0.8426_timecap_0.03_800_boost_xgb/Deposit_Borrow.csv
+
+==================================================
+Processing and Predicting for: Deposit -> Repay
+==================================================
+Training model...
+Cap Value: 68,620,306
+Events converted to censored: 55
+After capping - Min: 2, Max: 68620306, Median: 24484027
+[0]	train-cox-nloglik:14.28584
+[100]	train-cox-nloglik:13.01224
+[200]	train-cox-nloglik:12.92772
+[300]	train-cox-nloglik:12.86819
+[400]	train-cox-nloglik:12.82493
+[500]	train-cox-nloglik:12.78980
+[600]	train-cox-nloglik:12.76232
+[700]	train-cox-nloglik:12.73722
+[799]	train-cox-nloglik:12.71532
+  - Model trained successfully.
+Generating predictions for Deposit/Repay...
+  -> Predictions saved to 0.8426_timecap_0.03_800_boost_xgb/Deposit_Repay.csv
+
+==================================================
+Processing and Predicting for: Deposit -> Withdraw
+==================================================
+Training model...
+Cap Value: 63,450,551
+Events converted to censored: 219
+After capping - Min: 2, Max: 63450551, Median: 9403370
+[0]	train-cox-nloglik:14.07213
+[100]	train-cox-nloglik:13.11405
+[200]	train-cox-nloglik:13.02218
+[300]	train-cox-nloglik:12.98257
+[400]	train-cox-nloglik:12.95982
+[500]	train-cox-nloglik:12.94293
+[600]	train-cox-nloglik:12.93110
+[700]	train-cox-nloglik:12.92067
+[799]	train-cox-nloglik:12.91079
+  - Model trained successfully.
+Generating predictions for Deposit/Withdraw...
+  -> Predictions saved to 0.8426_timecap_0.03_800_boost_xgb/Deposit_Withdraw.csv
+
+==================================================
+Processing and Predicting for: Deposit -> Liquidated
+==================================================
+Training model...
+Cap Value: 69,662,619
+Events converted to censored: 35
+After capping - Min: 68, Max: 69662619, Median: 33209522
+[0]	train-cox-nloglik:14.09200
+[100]	train-cox-nloglik:12.67996
+[200]	train-cox-nloglik:12.52720
+[300]	train-cox-nloglik:12.37686
+[400]	train-cox-nloglik:12.26681
+[500]	train-cox-nloglik:12.18930
+[600]	train-cox-nloglik:12.11933
+[700]	train-cox-nloglik:12.06211
+[799]	train-cox-nloglik:12.01418
+  - Model trained successfully.
+Generating predictions for Deposit/Liquidated...
+  -> Predictions saved to 0.8426_timecap_0.03_800_boost_xgb/Deposit_Liquidated.csv
+
+==================================================
+Processing and Predicting for: Repay -> Borrow
+==================================================
+Training model...
+Cap Value: 62,730,298
+Events converted to censored: 31
+After capping - Min: 2, Max: 62730298, Median: 12579
+[0]	train-cox-nloglik:12.86278
+[100]	train-cox-nloglik:12.19247
+[200]	train-cox-nloglik:12.12750
+[300]	train-cox-nloglik:12.10246
+[400]	train-cox-nloglik:12.08738
+[500]	train-cox-nloglik:12.07613
+[600]	train-cox-nloglik:12.06601
+[700]	train-cox-nloglik:12.05704
+[799]	train-cox-nloglik:12.04907
+  - Model trained successfully.
+Generating predictions for Repay/Borrow...
+  -> Predictions saved to 0.8426_timecap_0.03_800_boost_xgb/Repay_Borrow.csv
+
+==================================================
+Processing and Predicting for: Repay -> Deposit
+==================================================
+Training model...
+Cap Value: 71,156,583
+Events converted to censored: 2
+After capping - Min: 2, Max: 71156583, Median: 16597792
+[0]	train-cox-nloglik:13.24812
+[100]	train-cox-nloglik:12.48488
+[200]	train-cox-nloglik:12.38665
+[300]	train-cox-nloglik:12.31820
+[400]	train-cox-nloglik:12.27135
+[500]	train-cox-nloglik:12.23870
+[600]	train-cox-nloglik:12.21047
+[700]	train-cox-nloglik:12.18644
+[799]	train-cox-nloglik:12.16508
+  - Model trained successfully.
+Generating predictions for Repay/Deposit...
+  -> Predictions saved to 0.8426_timecap_0.03_800_boost_xgb/Repay_Deposit.csv
+
+==================================================
+Processing and Predicting for: Repay -> Withdraw
+==================================================
+Training model...
+Cap Value: 71,159,678
+Events converted to censored: 1
+After capping - Min: 2, Max: 71159678, Median: 19557586
+[0]	train-cox-nloglik:13.28196
+[100]	train-cox-nloglik:12.53597
+[200]	train-cox-nloglik:12.41020
+[300]	train-cox-nloglik:12.33802
+[400]	train-cox-nloglik:12.28146
+[500]	train-cox-nloglik:12.24065
+[600]	train-cox-nloglik:12.20935
+[700]	train-cox-nloglik:12.18496
+[799]	train-cox-nloglik:12.16225
+  - Model trained successfully.
+Generating predictions for Repay/Withdraw...
+  -> Predictions saved to 0.8426_timecap_0.03_800_boost_xgb/Repay_Withdraw.csv
+
+==================================================
+Processing and Predicting for: Repay -> Liquidated
+==================================================
+Training model...
+Cap Value: 71,789,570
+Events converted to censored: 0
+After capping - Min: 252, Max: 71789570, Median: 35091180
+[0]	train-cox-nloglik:13.08710
+[100]	train-cox-nloglik:11.17227
+[200]	train-cox-nloglik:10.83691
+[300]	train-cox-nloglik:10.51592
+[400]	train-cox-nloglik:10.27895
+[500]	train-cox-nloglik:10.12039
+[600]	train-cox-nloglik:9.96764
+[700]	train-cox-nloglik:9.83747
+[799]	train-cox-nloglik:9.72568
+  - Model trained successfully.
+Generating predictions for Repay/Liquidated...
+  -> Predictions saved to 0.8426_timecap_0.03_800_boost_xgb/Repay_Liquidated.csv
+
+==================================================
+Processing and Predicting for: Withdraw -> Borrow
+==================================================
+Training model...
+Cap Value: 68,124,487
+Events converted to censored: 27
+After capping - Min: 2, Max: 68124487, Median: 17301977
+[0]	train-cox-nloglik:13.70836
+[100]	train-cox-nloglik:11.58571
+[200]	train-cox-nloglik:11.47294
+[300]	train-cox-nloglik:11.41678
+[400]	train-cox-nloglik:11.36432
+[500]	train-cox-nloglik:11.32080
+[600]	train-cox-nloglik:11.28337
+[700]	train-cox-nloglik:11.25045
+[799]	train-cox-nloglik:11.22343
+  - Model trained successfully.
+Generating predictions for Withdraw/Borrow...
+  -> Predictions saved to 0.8426_timecap_0.03_800_boost_xgb/Withdraw_Borrow.csv
+
+==================================================
+Processing and Predicting for: Withdraw -> Deposit
+==================================================
+Training model...
+Cap Value: 67,284,492
+Events converted to censored: 12
+After capping - Min: 2, Max: 67284492, Median: 10981140
+[0]	train-cox-nloglik:13.73277
+[100]	train-cox-nloglik:12.24738
+[200]	train-cox-nloglik:12.11767
+[300]	train-cox-nloglik:12.07829
+[400]	train-cox-nloglik:12.05605
+[500]	train-cox-nloglik:12.04060
+[600]	train-cox-nloglik:12.02802
+[700]	train-cox-nloglik:12.01760
+[799]	train-cox-nloglik:12.00874
+  - Model trained successfully.
+Generating predictions for Withdraw/Deposit...
+  -> Predictions saved to 0.8426_timecap_0.03_800_boost_xgb/Withdraw_Deposit.csv
+
+==================================================
+Processing and Predicting for: Withdraw -> Repay
+==================================================
+Training model...
+Cap Value: 68,011,729
+Events converted to censored: 43
+After capping - Min: 2, Max: 68011729, Median: 17005270
+[0]	train-cox-nloglik:13.81098
+[100]	train-cox-nloglik:11.93025
+[200]	train-cox-nloglik:11.85419
+[300]	train-cox-nloglik:11.78249
+[400]	train-cox-nloglik:11.72947
+[500]	train-cox-nloglik:11.68195
+[600]	train-cox-nloglik:11.64451
+[700]	train-cox-nloglik:11.60770
+[799]	train-cox-nloglik:11.57811
+  - Model trained successfully.
+Generating predictions for Withdraw/Repay...
+  -> Predictions saved to 0.8426_timecap_0.03_800_boost_xgb/Withdraw_Repay.csv
+
+==================================================
+Processing and Predicting for: Withdraw -> Liquidated
+==================================================
+Training model...
+Cap Value: 68,707,667
+Events converted to censored: 8
+After capping - Min: 10, Max: 68707667, Median: 24480650
+[0]	train-cox-nloglik:13.29295
+[100]	train-cox-nloglik:11.07775
+[200]	train-cox-nloglik:10.84621
+[300]	train-cox-nloglik:10.63688
+[400]	train-cox-nloglik:10.46501
+[500]	train-cox-nloglik:10.33708
+[600]	train-cox-nloglik:10.23149
+[700]	train-cox-nloglik:10.13823
+[799]	train-cox-nloglik:10.05020
+  - Model trained successfully.
+Generating predictions for Withdraw/Liquidated...
+  -> Predictions saved to 0.8426_timecap_0.03_800_boost_xgb/Withdraw_Liquidated.csv
+
+
+All prediction files have been generated.
+Successfully created '0.8426_timecap_0.03_800_boost_xgb.zip' from the '0.8426_timecap_0.03_800_boost_xgb' directory.
+You can now upload this file to the CodaBench competition.
