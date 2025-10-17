@@ -100,25 +100,26 @@ def create_ensemble_strategies(index_event: str, outcome_event: str) -> Ensemble
     # Determine weights based on transition performance
     if outcome_event in ['Liquidated', 'Repay', 'Borrow'] and index_event == 'Withdraw':
         # Strong performers - more aggressive
-        ensemble.add_model(aggressive_params, 600, 0.5)
-        ensemble.add_model(balanced_params, 700, 0.3)
-        ensemble.add_model(conservative_params, 800, 0.2)
+        ensemble.add_model(aggressive_params, 800, 0.5)
+        ensemble.add_model(balanced_params, 900, 0.3)
+        ensemble.add_model(conservative_params, 1000, 0.2)
     elif index_event in ['Repay', 'Borrow'] and outcome_event in ['Withdraw', 'Liquidated']:
         # Weak performers - more conservative
-        ensemble.add_model(conservative_params, 1000, 0.4)
-        ensemble.add_model(balanced_params, 800, 0.4)
-        ensemble.add_model(aggressive_params, 600, 0.2)
+        ensemble.add_model(conservative_params, 1400, 0.4)
+        ensemble.add_model(balanced_params, 1200, 0.4)
+        ensemble.add_model(aggressive_params, 1000, 0.2)
     else:
         # Moderate performers - balanced approach
-        ensemble.add_model(balanced_params, 800, 0.4)
-        ensemble.add_model(aggressive_params, 600, 0.3)
-        ensemble.add_model(conservative_params, 900, 0.3)
+        ensemble.add_model(balanced_params, 1000, 0.4)
+        ensemble.add_model(aggressive_params, 800, 0.3)
+        ensemble.add_model(conservative_params, 1100, 0.3)
     
     return ensemble
 
 ## --- DEFINE PATH --- ##
-PARTICIPANT_DATA_PATH = '/home/dgxuser40/manjil/finsurv/participant_data'
-SUBMISSION_DIR = f'ensemble_xgb_improved'
+TRAIN_DATA_PATH = '/home/dgxuser40/manjil/finsurv/participant_data'
+TEST_DATA_PATH = '/home/dgxuser40/manjil/finsurv/test_features'
+SUBMISSION_DIR = f'more100_rounds_0.84630_ensemble_xgb'
 os.makedirs(SUBMISSION_DIR, exist_ok=True)
 
 ## --- DEFINE ALL 16 EVENT PAIRS --- ##
@@ -140,8 +141,10 @@ for index_event, outcome_event in event_pairs:
     dataset_path = os.path.join(index_event, outcome_event)
     
     try:
-        train_df = pd.read_csv(os.path.join(PARTICIPANT_DATA_PATH, dataset_path, 'train.csv'))
-        test_features_df = pd.read_csv(os.path.join(PARTICIPANT_DATA_PATH, dataset_path, 'test_features.csv'))
+        train_df = pd.read_csv(os.path.join(TRAIN_DATA_PATH, dataset_path, 'train.csv'))
+        test_features_df = pd.read_csv(os.path.join(TEST_DATA_PATH, dataset_path, 'test_features.csv'))
+        print(f"No of features in train dataset: {len(train_df.keys())}")
+        print(f"No of features in holdout test dataset: {len(test_features_df.keys())}")
     except FileNotFoundError as e:
         print(f"Data not found for {dataset_path}. Skipping.")
         continue
@@ -174,7 +177,7 @@ for index_event, outcome_event in event_pairs:
 print("\n\nAll prediction files have been generated.")
 
 ## --- CREATE SUBMISSION FOLDER --- ##
-output_zip_filename = f'ensemble_xgb_improved'
+output_zip_filename = f'more100_rounds_0.84630_ensemble_xgb'
 shutil.make_archive(output_zip_filename, 'zip', SUBMISSION_DIR)
 print(f"Successfully created '{output_zip_filename}.zip' from the '{SUBMISSION_DIR}' directory.")
 print("You can now upload this file to the CodaBench competition.")

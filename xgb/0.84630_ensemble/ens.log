@@ -1,0 +1,1116 @@
+nohup: ignoring input
+
+============================================================
+Processing and Predicting for: Borrow -> Deposit
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+[0]	train-cox-nloglik:13.25210	valid-cox-nloglik:11.05614
+[50]	train-cox-nloglik:12.68539	valid-cox-nloglik:10.48634
+[100]	train-cox-nloglik:12.56835	valid-cox-nloglik:10.36869
+[150]	train-cox-nloglik:12.50514	valid-cox-nloglik:10.30601
+[200]	train-cox-nloglik:12.45970	valid-cox-nloglik:10.26126
+[250]	train-cox-nloglik:12.42428	valid-cox-nloglik:10.22718
+[300]	train-cox-nloglik:12.39809	valid-cox-nloglik:10.20216
+[350]	train-cox-nloglik:12.37601	valid-cox-nloglik:10.18165
+[400]	train-cox-nloglik:12.35531	valid-cox-nloglik:10.16227
+[450]	train-cox-nloglik:12.33987	valid-cox-nloglik:10.14815
+[500]	train-cox-nloglik:12.32401	valid-cox-nloglik:10.13390
+[550]	train-cox-nloglik:12.31028	valid-cox-nloglik:10.12184
+[600]	train-cox-nloglik:12.29679	valid-cox-nloglik:10.11001
+[650]	train-cox-nloglik:12.28524	valid-cox-nloglik:10.10003
+[700]	train-cox-nloglik:12.27470	valid-cox-nloglik:10.09109
+[750]	train-cox-nloglik:12.26444	valid-cox-nloglik:10.08234
+[800]	train-cox-nloglik:12.25504	valid-cox-nloglik:10.07441
+[850]	train-cox-nloglik:12.24550	valid-cox-nloglik:10.06630
+[899]	train-cox-nloglik:12.23722	valid-cox-nloglik:10.05951
+  Training model 2/3 (weight: 0.3)
+[0]	train-cox-nloglik:13.25814	valid-cox-nloglik:11.06166
+[50]	train-cox-nloglik:12.65964	valid-cox-nloglik:10.46273
+[100]	train-cox-nloglik:12.50463	valid-cox-nloglik:10.30929
+[150]	train-cox-nloglik:12.42909	valid-cox-nloglik:10.23559
+[200]	train-cox-nloglik:12.38280	valid-cox-nloglik:10.19122
+[250]	train-cox-nloglik:12.35180	valid-cox-nloglik:10.16209
+[300]	train-cox-nloglik:12.31852	valid-cox-nloglik:10.13173
+[350]	train-cox-nloglik:12.28886	valid-cox-nloglik:10.10548
+[400]	train-cox-nloglik:12.26240	valid-cox-nloglik:10.08283
+[450]	train-cox-nloglik:12.23832	valid-cox-nloglik:10.06216
+[500]	train-cox-nloglik:12.21757	valid-cox-nloglik:10.04527
+[550]	train-cox-nloglik:12.20005	valid-cox-nloglik:10.03138
+[600]	train-cox-nloglik:12.18407	valid-cox-nloglik:10.01881
+[650]	train-cox-nloglik:12.16920	valid-cox-nloglik:10.00726
+[699]	train-cox-nloglik:12.15568	valid-cox-nloglik:9.99707
+  Training model 3/3 (weight: 0.3)
+[0]	train-cox-nloglik:13.25166	valid-cox-nloglik:11.05562
+[50]	train-cox-nloglik:12.74946	valid-cox-nloglik:10.54895
+[100]	train-cox-nloglik:12.65140	valid-cox-nloglik:10.45044
+[150]	train-cox-nloglik:12.59073	valid-cox-nloglik:10.38933
+[200]	train-cox-nloglik:12.55142	valid-cox-nloglik:10.35047
+[250]	train-cox-nloglik:12.51817	valid-cox-nloglik:10.31753
+[300]	train-cox-nloglik:12.49419	valid-cox-nloglik:10.29402
+[350]	train-cox-nloglik:12.47238	valid-cox-nloglik:10.27275
+[400]	train-cox-nloglik:12.45574	valid-cox-nloglik:10.25634
+[450]	train-cox-nloglik:12.44065	valid-cox-nloglik:10.24202
+[500]	train-cox-nloglik:12.42632	valid-cox-nloglik:10.22811
+[550]	train-cox-nloglik:12.41361	valid-cox-nloglik:10.21591
+[600]	train-cox-nloglik:12.40257	valid-cox-nloglik:10.20558
+[650]	train-cox-nloglik:12.39189	valid-cox-nloglik:10.19543
+[700]	train-cox-nloglik:12.38266	valid-cox-nloglik:10.18692
+[750]	train-cox-nloglik:12.37379	valid-cox-nloglik:10.17853
+[800]	train-cox-nloglik:12.36590	valid-cox-nloglik:10.17112
+[850]	train-cox-nloglik:12.35838	valid-cox-nloglik:10.16417
+[900]	train-cox-nloglik:12.35133	valid-cox-nloglik:10.15782
+[950]	train-cox-nloglik:12.34457	valid-cox-nloglik:10.15145
+[999]	train-cox-nloglik:12.33815	valid-cox-nloglik:10.14573
+Generating ensemble predictions...
+  -> Predictions saved to ensemble_xgb_improved/Borrow_Deposit.csv
+
+============================================================
+Processing and Predicting for: Borrow -> Repay
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+[0]	train-cox-nloglik:12.81850	valid-cox-nloglik:10.62328
+[50]	train-cox-nloglik:12.14927	valid-cox-nloglik:9.95371
+[100]	train-cox-nloglik:12.01080	valid-cox-nloglik:9.81515
+[150]	train-cox-nloglik:11.95684	valid-cox-nloglik:9.76180
+[200]	train-cox-nloglik:11.93082	valid-cox-nloglik:9.73676
+[250]	train-cox-nloglik:11.91580	valid-cox-nloglik:9.72320
+[300]	train-cox-nloglik:11.90634	valid-cox-nloglik:9.71516
+[350]	train-cox-nloglik:11.89969	valid-cox-nloglik:9.71026
+[400]	train-cox-nloglik:11.89461	valid-cox-nloglik:9.70688
+[450]	train-cox-nloglik:11.89027	valid-cox-nloglik:9.70445
+[500]	train-cox-nloglik:11.88681	valid-cox-nloglik:9.70293
+[550]	train-cox-nloglik:11.88374	valid-cox-nloglik:9.70166
+[600]	train-cox-nloglik:11.88064	valid-cox-nloglik:9.70038
+[650]	train-cox-nloglik:11.87777	valid-cox-nloglik:9.69918
+[700]	train-cox-nloglik:11.87525	valid-cox-nloglik:9.69876
+[750]	train-cox-nloglik:11.87282	valid-cox-nloglik:9.69797
+[800]	train-cox-nloglik:11.87051	valid-cox-nloglik:9.69728
+[850]	train-cox-nloglik:11.86835	valid-cox-nloglik:9.69690
+[899]	train-cox-nloglik:11.86625	valid-cox-nloglik:9.69670
+  Training model 2/3 (weight: 0.3)
+[0]	train-cox-nloglik:12.83656	valid-cox-nloglik:10.64122
+[50]	train-cox-nloglik:12.23166	valid-cox-nloglik:10.03835
+[100]	train-cox-nloglik:12.06111	valid-cox-nloglik:9.87045
+[150]	train-cox-nloglik:11.98047	valid-cox-nloglik:9.79389
+[200]	train-cox-nloglik:11.93575	valid-cox-nloglik:9.75300
+[250]	train-cox-nloglik:11.90812	valid-cox-nloglik:9.72932
+[300]	train-cox-nloglik:11.88953	valid-cox-nloglik:9.71523
+[350]	train-cox-nloglik:11.87614	valid-cox-nloglik:9.70589
+[400]	train-cox-nloglik:11.86568	valid-cox-nloglik:9.69934
+[450]	train-cox-nloglik:11.85725	valid-cox-nloglik:9.69531
+[500]	train-cox-nloglik:11.85032	valid-cox-nloglik:9.69264
+[550]	train-cox-nloglik:11.84432	valid-cox-nloglik:9.69126
+[600]	train-cox-nloglik:11.83909	valid-cox-nloglik:9.69072
+[650]	train-cox-nloglik:11.83419	valid-cox-nloglik:9.69075
+[699]	train-cox-nloglik:11.82991	valid-cox-nloglik:9.69108
+  Training model 3/3 (weight: 0.3)
+[0]	train-cox-nloglik:12.78647	valid-cox-nloglik:10.59114
+[50]	train-cox-nloglik:12.07830	valid-cox-nloglik:9.88089
+[100]	train-cox-nloglik:11.98788	valid-cox-nloglik:9.78979
+[150]	train-cox-nloglik:11.96028	valid-cox-nloglik:9.76215
+[200]	train-cox-nloglik:11.94741	valid-cox-nloglik:9.74954
+[250]	train-cox-nloglik:11.94019	valid-cox-nloglik:9.74256
+[300]	train-cox-nloglik:11.93485	valid-cox-nloglik:9.73768
+[350]	train-cox-nloglik:11.93122	valid-cox-nloglik:9.73457
+[400]	train-cox-nloglik:11.92790	valid-cox-nloglik:9.73175
+[450]	train-cox-nloglik:11.92493	valid-cox-nloglik:9.72930
+[500]	train-cox-nloglik:11.92220	valid-cox-nloglik:9.72708
+[550]	train-cox-nloglik:11.91988	valid-cox-nloglik:9.72527
+[600]	train-cox-nloglik:11.91757	valid-cox-nloglik:9.72347
+[650]	train-cox-nloglik:11.91521	valid-cox-nloglik:9.72173
+[700]	train-cox-nloglik:11.91341	valid-cox-nloglik:9.72031
+[750]	train-cox-nloglik:11.91143	valid-cox-nloglik:9.71890
+[800]	train-cox-nloglik:11.90958	valid-cox-nloglik:9.71769
+[850]	train-cox-nloglik:11.90801	valid-cox-nloglik:9.71671
+[900]	train-cox-nloglik:11.90648	valid-cox-nloglik:9.71564
+[950]	train-cox-nloglik:11.90485	valid-cox-nloglik:9.71462
+[999]	train-cox-nloglik:11.90321	valid-cox-nloglik:9.71341
+Generating ensemble predictions...
+  -> Predictions saved to ensemble_xgb_improved/Borrow_Repay.csv
+
+============================================================
+Processing and Predicting for: Borrow -> Withdraw
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.45)
+[0]	train-cox-nloglik:13.29569	valid-cox-nloglik:11.09997
+[50]	train-cox-nloglik:12.68933	valid-cox-nloglik:10.49450
+[100]	train-cox-nloglik:12.55942	valid-cox-nloglik:10.36447
+[150]	train-cox-nloglik:12.48439	valid-cox-nloglik:10.28946
+[200]	train-cox-nloglik:12.43418	valid-cox-nloglik:10.23992
+[250]	train-cox-nloglik:12.39523	valid-cox-nloglik:10.20179
+[300]	train-cox-nloglik:12.36379	valid-cox-nloglik:10.17118
+[350]	train-cox-nloglik:12.33502	valid-cox-nloglik:10.14343
+[400]	train-cox-nloglik:12.30979	valid-cox-nloglik:10.11935
+[450]	train-cox-nloglik:12.28853	valid-cox-nloglik:10.09922
+[500]	train-cox-nloglik:12.27088	valid-cox-nloglik:10.08301
+[550]	train-cox-nloglik:12.25461	valid-cox-nloglik:10.06821
+[600]	train-cox-nloglik:12.24040	valid-cox-nloglik:10.05573
+[650]	train-cox-nloglik:12.22685	valid-cox-nloglik:10.04359
+[700]	train-cox-nloglik:12.21426	valid-cox-nloglik:10.03233
+[750]	train-cox-nloglik:12.20137	valid-cox-nloglik:10.02089
+[800]	train-cox-nloglik:12.18939	valid-cox-nloglik:10.01032
+[850]	train-cox-nloglik:12.17730	valid-cox-nloglik:9.99952
+[900]	train-cox-nloglik:12.16726	valid-cox-nloglik:9.99088
+[950]	train-cox-nloglik:12.15646	valid-cox-nloglik:9.98141
+[1000]	train-cox-nloglik:12.14808	valid-cox-nloglik:9.97417
+[1050]	train-cox-nloglik:12.13866	valid-cox-nloglik:9.96609
+[1100]	train-cox-nloglik:12.12974	valid-cox-nloglik:9.95854
+[1150]	train-cox-nloglik:12.12182	valid-cox-nloglik:9.95218
+[1200]	train-cox-nloglik:12.11408	valid-cox-nloglik:9.94593
+[1250]	train-cox-nloglik:12.10710	valid-cox-nloglik:9.94026
+[1299]	train-cox-nloglik:12.09953	valid-cox-nloglik:9.93414
+  Training model 2/3 (weight: 0.35)
+[0]	train-cox-nloglik:13.30283	valid-cox-nloglik:11.10631
+[50]	train-cox-nloglik:12.75816	valid-cox-nloglik:10.56219
+[100]	train-cox-nloglik:12.64025	valid-cox-nloglik:10.44306
+[150]	train-cox-nloglik:12.57575	valid-cox-nloglik:10.37807
+[200]	train-cox-nloglik:12.52632	valid-cox-nloglik:10.32832
+[250]	train-cox-nloglik:12.49138	valid-cox-nloglik:10.29332
+[300]	train-cox-nloglik:12.46468	valid-cox-nloglik:10.26714
+[350]	train-cox-nloglik:12.43966	valid-cox-nloglik:10.24235
+[400]	train-cox-nloglik:12.41907	valid-cox-nloglik:10.22221
+[450]	train-cox-nloglik:12.40387	valid-cox-nloglik:10.20735
+[500]	train-cox-nloglik:12.38902	valid-cox-nloglik:10.19295
+[550]	train-cox-nloglik:12.37580	valid-cox-nloglik:10.18014
+[600]	train-cox-nloglik:12.36334	valid-cox-nloglik:10.16779
+[650]	train-cox-nloglik:12.35025	valid-cox-nloglik:10.15541
+[700]	train-cox-nloglik:12.33875	valid-cox-nloglik:10.14456
+[750]	train-cox-nloglik:12.32893	valid-cox-nloglik:10.13513
+[800]	train-cox-nloglik:12.31914	valid-cox-nloglik:10.12575
+[850]	train-cox-nloglik:12.31064	valid-cox-nloglik:10.11772
+[900]	train-cox-nloglik:12.30295	valid-cox-nloglik:10.11047
+[950]	train-cox-nloglik:12.29472	valid-cox-nloglik:10.10281
+[1000]	train-cox-nloglik:12.28672	valid-cox-nloglik:10.09544
+[1050]	train-cox-nloglik:12.27981	valid-cox-nloglik:10.08896
+[1100]	train-cox-nloglik:12.27355	valid-cox-nloglik:10.08346
+[1150]	train-cox-nloglik:12.26708	valid-cox-nloglik:10.07732
+[1200]	train-cox-nloglik:12.26085	valid-cox-nloglik:10.07169
+[1250]	train-cox-nloglik:12.25473	valid-cox-nloglik:10.06623
+[1300]	train-cox-nloglik:12.24872	valid-cox-nloglik:10.06064
+[1350]	train-cox-nloglik:12.24320	valid-cox-nloglik:10.05573
+[1399]	train-cox-nloglik:12.23791	valid-cox-nloglik:10.05087
+  Training model 3/3 (weight: 0.2)
+[0]	train-cox-nloglik:13.30261	valid-cox-nloglik:11.10794
+[50]	train-cox-nloglik:12.65873	valid-cox-nloglik:10.46386
+[100]	train-cox-nloglik:12.49405	valid-cox-nloglik:10.30090
+[150]	train-cox-nloglik:12.42081	valid-cox-nloglik:10.22934
+[200]	train-cox-nloglik:12.36434	valid-cox-nloglik:10.17563
+[250]	train-cox-nloglik:12.31048	valid-cox-nloglik:10.12523
+[300]	train-cox-nloglik:12.26595	valid-cox-nloglik:10.08405
+[350]	train-cox-nloglik:12.23022	valid-cox-nloglik:10.05167
+[400]	train-cox-nloglik:12.20160	valid-cox-nloglik:10.02650
+[450]	train-cox-nloglik:12.17439	valid-cox-nloglik:10.00276
+[500]	train-cox-nloglik:12.15060	valid-cox-nloglik:9.98222
+[550]	train-cox-nloglik:12.12841	valid-cox-nloglik:9.96365
+[600]	train-cox-nloglik:12.11082	valid-cox-nloglik:9.94964
+[650]	train-cox-nloglik:12.09184	valid-cox-nloglik:9.93358
+[700]	train-cox-nloglik:12.07460	valid-cox-nloglik:9.91967
+[750]	train-cox-nloglik:12.05915	valid-cox-nloglik:9.90773
+[799]	train-cox-nloglik:12.04416	valid-cox-nloglik:9.89579
+Generating ensemble predictions...
+  -> Predictions saved to ensemble_xgb_improved/Borrow_Withdraw.csv
+
+============================================================
+Processing and Predicting for: Borrow -> Liquidated
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.45)
+[0]	train-cox-nloglik:12.89941	valid-cox-nloglik:10.70163
+[50]	train-cox-nloglik:11.42655	valid-cox-nloglik:9.26822
+[100]	train-cox-nloglik:11.17610	valid-cox-nloglik:9.02531
+[150]	train-cox-nloglik:11.02375	valid-cox-nloglik:8.87951
+[200]	train-cox-nloglik:10.84863	valid-cox-nloglik:8.71063
+[250]	train-cox-nloglik:10.69482	valid-cox-nloglik:8.56555
+[300]	train-cox-nloglik:10.56587	valid-cox-nloglik:8.45070
+[350]	train-cox-nloglik:10.44302	valid-cox-nloglik:8.34002
+[400]	train-cox-nloglik:10.35027	valid-cox-nloglik:8.25839
+[450]	train-cox-nloglik:10.26997	valid-cox-nloglik:8.18976
+[500]	train-cox-nloglik:10.19187	valid-cox-nloglik:8.12213
+[550]	train-cox-nloglik:10.12040	valid-cox-nloglik:8.06134
+[600]	train-cox-nloglik:10.05722	valid-cox-nloglik:8.00909
+[650]	train-cox-nloglik:10.00175	valid-cox-nloglik:7.96358
+[700]	train-cox-nloglik:9.94293	valid-cox-nloglik:7.91510
+[750]	train-cox-nloglik:9.89573	valid-cox-nloglik:7.87519
+[800]	train-cox-nloglik:9.84734	valid-cox-nloglik:7.83846
+[850]	train-cox-nloglik:9.80529	valid-cox-nloglik:7.80544
+[900]	train-cox-nloglik:9.76201	valid-cox-nloglik:7.77026
+[950]	train-cox-nloglik:9.72105	valid-cox-nloglik:7.73790
+[1000]	train-cox-nloglik:9.68463	valid-cox-nloglik:7.71029
+[1050]	train-cox-nloglik:9.64695	valid-cox-nloglik:7.68132
+[1100]	train-cox-nloglik:9.61258	valid-cox-nloglik:7.65588
+[1150]	train-cox-nloglik:9.58172	valid-cox-nloglik:7.63415
+[1200]	train-cox-nloglik:9.54988	valid-cox-nloglik:7.61180
+[1250]	train-cox-nloglik:9.52009	valid-cox-nloglik:7.59109
+[1299]	train-cox-nloglik:9.49204	valid-cox-nloglik:7.57155
+  Training model 2/3 (weight: 0.35)
+[0]	train-cox-nloglik:12.92200	valid-cox-nloglik:10.69477
+[50]	train-cox-nloglik:11.79043	valid-cox-nloglik:9.60426
+[100]	train-cox-nloglik:11.51600	valid-cox-nloglik:9.34610
+[150]	train-cox-nloglik:11.33449	valid-cox-nloglik:9.17535
+[200]	train-cox-nloglik:11.18209	valid-cox-nloglik:9.03189
+[250]	train-cox-nloglik:11.06780	valid-cox-nloglik:8.92088
+[300]	train-cox-nloglik:10.96232	valid-cox-nloglik:8.82154
+[350]	train-cox-nloglik:10.88428	valid-cox-nloglik:8.74930
+[400]	train-cox-nloglik:10.80213	valid-cox-nloglik:8.67150
+[450]	train-cox-nloglik:10.73698	valid-cox-nloglik:8.61021
+[500]	train-cox-nloglik:10.67961	valid-cox-nloglik:8.55665
+[550]	train-cox-nloglik:10.62454	valid-cox-nloglik:8.50608
+[600]	train-cox-nloglik:10.57152	valid-cox-nloglik:8.45726
+[650]	train-cox-nloglik:10.52720	valid-cox-nloglik:8.41669
+[700]	train-cox-nloglik:10.48310	valid-cox-nloglik:8.37624
+[750]	train-cox-nloglik:10.44059	valid-cox-nloglik:8.33784
+[800]	train-cox-nloglik:10.40496	valid-cox-nloglik:8.30622
+[850]	train-cox-nloglik:10.37089	valid-cox-nloglik:8.27626
+[900]	train-cox-nloglik:10.33593	valid-cox-nloglik:8.24560
+[950]	train-cox-nloglik:10.30551	valid-cox-nloglik:8.21858
+[1000]	train-cox-nloglik:10.27569	valid-cox-nloglik:8.19350
+[1050]	train-cox-nloglik:10.24825	valid-cox-nloglik:8.17047
+[1100]	train-cox-nloglik:10.22161	valid-cox-nloglik:8.14880
+[1150]	train-cox-nloglik:10.19359	valid-cox-nloglik:8.12318
+[1200]	train-cox-nloglik:10.16942	valid-cox-nloglik:8.10428
+[1250]	train-cox-nloglik:10.14534	valid-cox-nloglik:8.08462
+[1300]	train-cox-nloglik:10.12380	valid-cox-nloglik:8.06830
+[1350]	train-cox-nloglik:10.10077	valid-cox-nloglik:8.04925
+[1399]	train-cox-nloglik:10.07932	valid-cox-nloglik:8.03073
+  Training model 3/3 (weight: 0.2)
+[0]	train-cox-nloglik:12.96411	valid-cox-nloglik:10.75775
+[50]	train-cox-nloglik:11.16743	valid-cox-nloglik:9.01185
+[100]	train-cox-nloglik:10.79179	valid-cox-nloglik:8.66431
+[150]	train-cox-nloglik:10.60805	valid-cox-nloglik:8.49873
+[200]	train-cox-nloglik:10.45834	valid-cox-nloglik:8.36282
+[250]	train-cox-nloglik:10.31356	valid-cox-nloglik:8.23476
+[300]	train-cox-nloglik:10.17039	valid-cox-nloglik:8.11256
+[350]	train-cox-nloglik:10.04055	valid-cox-nloglik:8.00113
+[400]	train-cox-nloglik:9.91389	valid-cox-nloglik:7.89490
+[450]	train-cox-nloglik:9.80989	valid-cox-nloglik:7.80889
+[500]	train-cox-nloglik:9.71579	valid-cox-nloglik:7.73452
+[550]	train-cox-nloglik:9.62668	valid-cox-nloglik:7.66367
+[600]	train-cox-nloglik:9.55372	valid-cox-nloglik:7.60579
+[650]	train-cox-nloglik:9.47908	valid-cox-nloglik:7.54905
+[700]	train-cox-nloglik:9.41975	valid-cox-nloglik:7.50455
+[750]	train-cox-nloglik:9.35977	valid-cox-nloglik:7.46255
+[799]	train-cox-nloglik:9.30756	valid-cox-nloglik:7.42612
+Generating ensemble predictions...
+  -> Predictions saved to ensemble_xgb_improved/Borrow_Liquidated.csv
+
+============================================================
+Processing and Predicting for: Deposit -> Borrow
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+[0]	train-cox-nloglik:14.20055	valid-cox-nloglik:12.00349
+[50]	train-cox-nloglik:13.10195	valid-cox-nloglik:10.90429
+[100]	train-cox-nloglik:12.95413	valid-cox-nloglik:10.75729
+[150]	train-cox-nloglik:12.90451	valid-cox-nloglik:10.70876
+[200]	train-cox-nloglik:12.87430	valid-cox-nloglik:10.67969
+[250]	train-cox-nloglik:12.84368	valid-cox-nloglik:10.65076
+[300]	train-cox-nloglik:12.81785	valid-cox-nloglik:10.62646
+[350]	train-cox-nloglik:12.79735	valid-cox-nloglik:10.60735
+[400]	train-cox-nloglik:12.77887	valid-cox-nloglik:10.59015
+[450]	train-cox-nloglik:12.76409	valid-cox-nloglik:10.57670
+[500]	train-cox-nloglik:12.74907	valid-cox-nloglik:10.56280
+[550]	train-cox-nloglik:12.73592	valid-cox-nloglik:10.55115
+[600]	train-cox-nloglik:12.72357	valid-cox-nloglik:10.53998
+[650]	train-cox-nloglik:12.71155	valid-cox-nloglik:10.52912
+[700]	train-cox-nloglik:12.69909	valid-cox-nloglik:10.51781
+[750]	train-cox-nloglik:12.68875	valid-cox-nloglik:10.50862
+[800]	train-cox-nloglik:12.67759	valid-cox-nloglik:10.49860
+[850]	train-cox-nloglik:12.66821	valid-cox-nloglik:10.49044
+[899]	train-cox-nloglik:12.65934	valid-cox-nloglik:10.48255
+  Training model 2/3 (weight: 0.3)
+[0]	train-cox-nloglik:14.22207	valid-cox-nloglik:12.02475
+[50]	train-cox-nloglik:13.11322	valid-cox-nloglik:10.91938
+[100]	train-cox-nloglik:12.89908	valid-cox-nloglik:10.70895
+[150]	train-cox-nloglik:12.80960	valid-cox-nloglik:10.62258
+[200]	train-cox-nloglik:12.76638	valid-cox-nloglik:10.58147
+[250]	train-cox-nloglik:12.73869	valid-cox-nloglik:10.55580
+[300]	train-cox-nloglik:12.71716	valid-cox-nloglik:10.53614
+[350]	train-cox-nloglik:12.69801	valid-cox-nloglik:10.51884
+[400]	train-cox-nloglik:12.67710	valid-cox-nloglik:10.50067
+[450]	train-cox-nloglik:12.65662	valid-cox-nloglik:10.48323
+[500]	train-cox-nloglik:12.63784	valid-cox-nloglik:10.46716
+[550]	train-cox-nloglik:12.62137	valid-cox-nloglik:10.45355
+[600]	train-cox-nloglik:12.60547	valid-cox-nloglik:10.44040
+[650]	train-cox-nloglik:12.59094	valid-cox-nloglik:10.42852
+[699]	train-cox-nloglik:12.57842	valid-cox-nloglik:10.41876
+  Training model 3/3 (weight: 0.3)
+[0]	train-cox-nloglik:14.15147	valid-cox-nloglik:11.95403
+[50]	train-cox-nloglik:13.13780	valid-cox-nloglik:10.93810
+[100]	train-cox-nloglik:13.03317	valid-cox-nloglik:10.83386
+[150]	train-cox-nloglik:12.98664	valid-cox-nloglik:10.78774
+[200]	train-cox-nloglik:12.95583	valid-cox-nloglik:10.75747
+[250]	train-cox-nloglik:12.93299	valid-cox-nloglik:10.73514
+[300]	train-cox-nloglik:12.91037	valid-cox-nloglik:10.71307
+[350]	train-cox-nloglik:12.89069	valid-cox-nloglik:10.69393
+[400]	train-cox-nloglik:12.87530	valid-cox-nloglik:10.67928
+[450]	train-cox-nloglik:12.86055	valid-cox-nloglik:10.66515
+[500]	train-cox-nloglik:12.84716	valid-cox-nloglik:10.65233
+[550]	train-cox-nloglik:12.83565	valid-cox-nloglik:10.64130
+[600]	train-cox-nloglik:12.82547	valid-cox-nloglik:10.63172
+[650]	train-cox-nloglik:12.81594	valid-cox-nloglik:10.62277
+[700]	train-cox-nloglik:12.80680	valid-cox-nloglik:10.61394
+[750]	train-cox-nloglik:12.79880	valid-cox-nloglik:10.60663
+[800]	train-cox-nloglik:12.79178	valid-cox-nloglik:10.60031
+[850]	train-cox-nloglik:12.78449	valid-cox-nloglik:10.59344
+[900]	train-cox-nloglik:12.77716	valid-cox-nloglik:10.58664
+[950]	train-cox-nloglik:12.77012	valid-cox-nloglik:10.58012
+[999]	train-cox-nloglik:12.76434	valid-cox-nloglik:10.57487
+Generating ensemble predictions...
+  -> Predictions saved to ensemble_xgb_improved/Deposit_Borrow.csv
+
+============================================================
+Processing and Predicting for: Deposit -> Repay
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+[0]	train-cox-nloglik:14.18666	valid-cox-nloglik:11.98958
+[50]	train-cox-nloglik:13.05444	valid-cox-nloglik:10.85875
+[100]	train-cox-nloglik:12.90563	valid-cox-nloglik:10.71093
+[150]	train-cox-nloglik:12.85542	valid-cox-nloglik:10.66188
+[200]	train-cox-nloglik:12.81839	valid-cox-nloglik:10.62579
+[250]	train-cox-nloglik:12.78748	valid-cox-nloglik:10.59616
+[300]	train-cox-nloglik:12.76122	valid-cox-nloglik:10.57144
+[350]	train-cox-nloglik:12.73665	valid-cox-nloglik:10.54855
+[400]	train-cox-nloglik:12.71649	valid-cox-nloglik:10.52950
+[450]	train-cox-nloglik:12.69996	valid-cox-nloglik:10.51436
+[500]	train-cox-nloglik:12.68331	valid-cox-nloglik:10.49891
+[550]	train-cox-nloglik:12.66840	valid-cox-nloglik:10.48542
+[600]	train-cox-nloglik:12.65445	valid-cox-nloglik:10.47283
+[650]	train-cox-nloglik:12.64079	valid-cox-nloglik:10.46047
+[700]	train-cox-nloglik:12.62903	valid-cox-nloglik:10.45002
+[750]	train-cox-nloglik:12.61810	valid-cox-nloglik:10.44029
+[800]	train-cox-nloglik:12.60690	valid-cox-nloglik:10.43031
+[850]	train-cox-nloglik:12.59595	valid-cox-nloglik:10.42064
+[899]	train-cox-nloglik:12.58688	valid-cox-nloglik:10.41293
+  Training model 2/3 (weight: 0.3)
+[0]	train-cox-nloglik:14.20591	valid-cox-nloglik:12.00925
+[50]	train-cox-nloglik:13.07034	valid-cox-nloglik:10.87761
+[100]	train-cox-nloglik:12.84974	valid-cox-nloglik:10.65985
+[150]	train-cox-nloglik:12.76080	valid-cox-nloglik:10.57422
+[200]	train-cox-nloglik:12.71942	valid-cox-nloglik:10.53579
+[250]	train-cox-nloglik:12.69075	valid-cox-nloglik:10.50938
+[300]	train-cox-nloglik:12.66660	valid-cox-nloglik:10.48722
+[350]	train-cox-nloglik:12.64527	valid-cox-nloglik:10.46807
+[400]	train-cox-nloglik:12.61793	valid-cox-nloglik:10.44396
+[450]	train-cox-nloglik:12.59359	valid-cox-nloglik:10.42304
+[500]	train-cox-nloglik:12.57076	valid-cox-nloglik:10.40367
+[550]	train-cox-nloglik:12.55182	valid-cox-nloglik:10.38795
+[600]	train-cox-nloglik:12.53412	valid-cox-nloglik:10.37322
+[650]	train-cox-nloglik:12.51721	valid-cox-nloglik:10.35916
+[699]	train-cox-nloglik:12.50074	valid-cox-nloglik:10.34602
+  Training model 3/3 (weight: 0.3)
+[0]	train-cox-nloglik:14.15494	valid-cox-nloglik:11.95781
+[50]	train-cox-nloglik:13.08790	valid-cox-nloglik:10.89055
+[100]	train-cox-nloglik:12.98984	valid-cox-nloglik:10.79347
+[150]	train-cox-nloglik:12.93628	valid-cox-nloglik:10.74079
+[200]	train-cox-nloglik:12.90394	valid-cox-nloglik:10.70954
+[250]	train-cox-nloglik:12.87339	valid-cox-nloglik:10.67983
+[300]	train-cox-nloglik:12.84931	valid-cox-nloglik:10.65622
+[350]	train-cox-nloglik:12.83000	valid-cox-nloglik:10.63707
+[400]	train-cox-nloglik:12.81325	valid-cox-nloglik:10.62079
+[450]	train-cox-nloglik:12.79681	valid-cox-nloglik:10.60483
+[500]	train-cox-nloglik:12.78467	valid-cox-nloglik:10.59317
+[550]	train-cox-nloglik:12.77197	valid-cox-nloglik:10.58110
+[600]	train-cox-nloglik:12.76041	valid-cox-nloglik:10.57005
+[650]	train-cox-nloglik:12.74954	valid-cox-nloglik:10.55985
+[700]	train-cox-nloglik:12.74017	valid-cox-nloglik:10.55084
+[750]	train-cox-nloglik:12.73195	valid-cox-nloglik:10.54316
+[800]	train-cox-nloglik:12.72313	valid-cox-nloglik:10.53500
+[850]	train-cox-nloglik:12.71480	valid-cox-nloglik:10.52717
+[900]	train-cox-nloglik:12.70763	valid-cox-nloglik:10.52048
+[950]	train-cox-nloglik:12.70000	valid-cox-nloglik:10.51347
+[999]	train-cox-nloglik:12.69371	valid-cox-nloglik:10.50771
+Generating ensemble predictions...
+  -> Predictions saved to ensemble_xgb_improved/Deposit_Repay.csv
+
+============================================================
+Processing and Predicting for: Deposit -> Withdraw
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+[0]	train-cox-nloglik:13.96717	valid-cox-nloglik:11.77066
+[50]	train-cox-nloglik:13.15260	valid-cox-nloglik:10.95518
+[100]	train-cox-nloglik:12.99998	valid-cox-nloglik:10.80278
+[150]	train-cox-nloglik:12.94238	valid-cox-nloglik:10.74527
+[200]	train-cox-nloglik:12.90982	valid-cox-nloglik:10.71307
+[250]	train-cox-nloglik:12.88730	valid-cox-nloglik:10.69099
+[300]	train-cox-nloglik:12.87210	valid-cox-nloglik:10.67612
+[350]	train-cox-nloglik:12.85935	valid-cox-nloglik:10.66388
+[400]	train-cox-nloglik:12.84993	valid-cox-nloglik:10.65485
+[450]	train-cox-nloglik:12.84213	valid-cox-nloglik:10.64768
+[500]	train-cox-nloglik:12.83454	valid-cox-nloglik:10.64070
+[550]	train-cox-nloglik:12.82830	valid-cox-nloglik:10.63508
+[600]	train-cox-nloglik:12.82244	valid-cox-nloglik:10.62982
+[650]	train-cox-nloglik:12.81728	valid-cox-nloglik:10.62533
+[700]	train-cox-nloglik:12.81183	valid-cox-nloglik:10.62042
+[750]	train-cox-nloglik:12.80718	valid-cox-nloglik:10.61648
+[800]	train-cox-nloglik:12.80280	valid-cox-nloglik:10.61273
+[850]	train-cox-nloglik:12.79845	valid-cox-nloglik:10.60911
+[899]	train-cox-nloglik:12.79500	valid-cox-nloglik:10.60630
+  Training model 2/3 (weight: 0.3)
+[0]	train-cox-nloglik:13.99140	valid-cox-nloglik:11.79500
+[50]	train-cox-nloglik:13.20271	valid-cox-nloglik:11.00666
+[100]	train-cox-nloglik:13.00275	valid-cox-nloglik:10.80759
+[150]	train-cox-nloglik:12.92025	valid-cox-nloglik:10.72626
+[200]	train-cox-nloglik:12.87930	valid-cox-nloglik:10.68648
+[250]	train-cox-nloglik:12.85457	valid-cox-nloglik:10.66296
+[300]	train-cox-nloglik:12.83695	valid-cox-nloglik:10.64626
+[350]	train-cox-nloglik:12.82051	valid-cox-nloglik:10.63112
+[400]	train-cox-nloglik:12.80669	valid-cox-nloglik:10.61867
+[450]	train-cox-nloglik:12.79456	valid-cox-nloglik:10.60794
+[500]	train-cox-nloglik:12.78379	valid-cox-nloglik:10.59854
+[550]	train-cox-nloglik:12.77422	valid-cox-nloglik:10.59042
+[600]	train-cox-nloglik:12.76594	valid-cox-nloglik:10.58350
+[650]	train-cox-nloglik:12.75838	valid-cox-nloglik:10.57746
+[699]	train-cox-nloglik:12.75147	valid-cox-nloglik:10.57201
+  Training model 3/3 (weight: 0.3)
+[0]	train-cox-nloglik:13.93337	valid-cox-nloglik:11.73629
+[50]	train-cox-nloglik:13.13497	valid-cox-nloglik:10.93726
+[100]	train-cox-nloglik:13.02580	valid-cox-nloglik:10.82755
+[150]	train-cox-nloglik:12.98155	valid-cox-nloglik:10.78306
+[200]	train-cox-nloglik:12.95690	valid-cox-nloglik:10.75820
+[250]	train-cox-nloglik:12.94122	valid-cox-nloglik:10.74241
+[300]	train-cox-nloglik:12.92864	valid-cox-nloglik:10.73013
+[350]	train-cox-nloglik:12.91946	valid-cox-nloglik:10.72109
+[400]	train-cox-nloglik:12.91163	valid-cox-nloglik:10.71348
+[450]	train-cox-nloglik:12.90435	valid-cox-nloglik:10.70643
+[500]	train-cox-nloglik:12.89857	valid-cox-nloglik:10.70087
+[550]	train-cox-nloglik:12.89285	valid-cox-nloglik:10.69541
+[600]	train-cox-nloglik:12.88844	valid-cox-nloglik:10.69122
+[650]	train-cox-nloglik:12.88368	valid-cox-nloglik:10.68669
+[700]	train-cox-nloglik:12.87900	valid-cox-nloglik:10.68226
+[750]	train-cox-nloglik:12.87474	valid-cox-nloglik:10.67822
+[800]	train-cox-nloglik:12.87086	valid-cox-nloglik:10.67453
+[850]	train-cox-nloglik:12.86744	valid-cox-nloglik:10.67137
+[900]	train-cox-nloglik:12.86431	valid-cox-nloglik:10.66838
+[950]	train-cox-nloglik:12.86129	valid-cox-nloglik:10.66561
+[999]	train-cox-nloglik:12.85809	valid-cox-nloglik:10.66269
+Generating ensemble predictions...
+  -> Predictions saved to ensemble_xgb_improved/Deposit_Withdraw.csv
+
+============================================================
+Processing and Predicting for: Deposit -> Liquidated
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+[0]	train-cox-nloglik:13.99548	valid-cox-nloglik:11.79958
+[50]	train-cox-nloglik:12.78154	valid-cox-nloglik:10.58214
+[100]	train-cox-nloglik:12.58306	valid-cox-nloglik:10.38454
+[150]	train-cox-nloglik:12.49962	valid-cox-nloglik:10.30272
+[200]	train-cox-nloglik:12.43391	valid-cox-nloglik:10.23878
+[250]	train-cox-nloglik:12.36770	valid-cox-nloglik:10.17567
+[300]	train-cox-nloglik:12.29406	valid-cox-nloglik:10.10561
+[350]	train-cox-nloglik:12.23660	valid-cox-nloglik:10.05106
+[400]	train-cox-nloglik:12.18565	valid-cox-nloglik:10.00390
+[450]	train-cox-nloglik:12.14470	valid-cox-nloglik:9.96619
+[500]	train-cox-nloglik:12.10236	valid-cox-nloglik:9.92682
+[550]	train-cox-nloglik:12.06368	valid-cox-nloglik:9.89076
+[600]	train-cox-nloglik:12.03307	valid-cox-nloglik:9.86328
+[650]	train-cox-nloglik:12.00620	valid-cox-nloglik:9.83977
+[700]	train-cox-nloglik:11.97476	valid-cox-nloglik:9.81133
+[750]	train-cox-nloglik:11.95200	valid-cox-nloglik:9.79116
+[800]	train-cox-nloglik:11.92729	valid-cox-nloglik:9.76907
+[850]	train-cox-nloglik:11.90326	valid-cox-nloglik:9.74847
+[899]	train-cox-nloglik:11.88319	valid-cox-nloglik:9.73121
+  Training model 2/3 (weight: 0.3)
+[0]	train-cox-nloglik:14.02993	valid-cox-nloglik:11.83434
+[50]	train-cox-nloglik:12.68293	valid-cox-nloglik:10.49332
+[100]	train-cox-nloglik:12.37964	valid-cox-nloglik:10.19752
+[150]	train-cox-nloglik:12.23751	valid-cox-nloglik:10.06342
+[200]	train-cox-nloglik:12.16384	valid-cox-nloglik:9.99475
+[250]	train-cox-nloglik:12.10009	valid-cox-nloglik:9.93538
+[300]	train-cox-nloglik:12.04742	valid-cox-nloglik:9.88640
+[350]	train-cox-nloglik:11.98516	valid-cox-nloglik:9.82983
+[400]	train-cox-nloglik:11.91636	valid-cox-nloglik:9.76834
+[450]	train-cox-nloglik:11.85563	valid-cox-nloglik:9.71435
+[500]	train-cox-nloglik:11.80008	valid-cox-nloglik:9.66688
+[550]	train-cox-nloglik:11.75184	valid-cox-nloglik:9.62505
+[600]	train-cox-nloglik:11.70838	valid-cox-nloglik:9.58900
+[650]	train-cox-nloglik:11.67454	valid-cox-nloglik:9.56189
+[699]	train-cox-nloglik:11.63793	valid-cox-nloglik:9.53226
+  Training model 3/3 (weight: 0.3)
+[0]	train-cox-nloglik:13.96875	valid-cox-nloglik:11.76782
+[50]	train-cox-nloglik:12.94773	valid-cox-nloglik:10.74200
+[100]	train-cox-nloglik:12.80975	valid-cox-nloglik:10.60218
+[150]	train-cox-nloglik:12.71764	valid-cox-nloglik:10.50951
+[200]	train-cox-nloglik:12.64504	valid-cox-nloglik:10.43870
+[250]	train-cox-nloglik:12.59351	valid-cox-nloglik:10.38872
+[300]	train-cox-nloglik:12.53733	valid-cox-nloglik:10.33451
+[350]	train-cox-nloglik:12.49156	valid-cox-nloglik:10.29038
+[400]	train-cox-nloglik:12.45181	valid-cox-nloglik:10.25261
+[450]	train-cox-nloglik:12.41745	valid-cox-nloglik:10.21956
+[500]	train-cox-nloglik:12.38561	valid-cox-nloglik:10.18948
+[550]	train-cox-nloglik:12.35592	valid-cox-nloglik:10.16125
+[600]	train-cox-nloglik:12.33329	valid-cox-nloglik:10.13965
+[650]	train-cox-nloglik:12.31106	valid-cox-nloglik:10.11878
+[700]	train-cox-nloglik:12.28788	valid-cox-nloglik:10.09671
+[750]	train-cox-nloglik:12.26461	valid-cox-nloglik:10.07461
+[800]	train-cox-nloglik:12.24792	valid-cox-nloglik:10.05971
+[850]	train-cox-nloglik:12.22851	valid-cox-nloglik:10.04125
+[900]	train-cox-nloglik:12.21006	valid-cox-nloglik:10.02436
+[950]	train-cox-nloglik:12.19354	valid-cox-nloglik:10.00920
+[999]	train-cox-nloglik:12.17873	valid-cox-nloglik:9.99563
+Generating ensemble predictions...
+  -> Predictions saved to ensemble_xgb_improved/Deposit_Liquidated.csv
+
+============================================================
+Processing and Predicting for: Repay -> Borrow
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+[0]	train-cox-nloglik:12.75772	valid-cox-nloglik:10.56218
+[50]	train-cox-nloglik:12.20148	valid-cox-nloglik:10.00303
+[100]	train-cox-nloglik:12.08660	valid-cox-nloglik:9.88760
+[150]	train-cox-nloglik:12.04431	valid-cox-nloglik:9.84566
+[200]	train-cox-nloglik:12.02269	valid-cox-nloglik:9.82503
+[250]	train-cox-nloglik:12.00820	valid-cox-nloglik:9.81156
+[300]	train-cox-nloglik:11.99780	valid-cox-nloglik:9.80244
+[350]	train-cox-nloglik:11.98998	valid-cox-nloglik:9.79575
+[400]	train-cox-nloglik:11.98317	valid-cox-nloglik:9.79020
+[450]	train-cox-nloglik:11.97705	valid-cox-nloglik:9.78519
+[500]	train-cox-nloglik:11.97165	valid-cox-nloglik:9.78082
+[550]	train-cox-nloglik:11.96634	valid-cox-nloglik:9.77696
+[600]	train-cox-nloglik:11.96162	valid-cox-nloglik:9.77327
+[650]	train-cox-nloglik:11.95668	valid-cox-nloglik:9.76958
+[700]	train-cox-nloglik:11.95239	valid-cox-nloglik:9.76653
+[750]	train-cox-nloglik:11.94803	valid-cox-nloglik:9.76325
+[800]	train-cox-nloglik:11.94434	valid-cox-nloglik:9.76059
+[850]	train-cox-nloglik:11.94049	valid-cox-nloglik:9.75787
+[899]	train-cox-nloglik:11.93683	valid-cox-nloglik:9.75514
+  Training model 2/3 (weight: 0.3)
+[0]	train-cox-nloglik:12.76637	valid-cox-nloglik:10.57103
+[50]	train-cox-nloglik:12.26179	valid-cox-nloglik:10.06491
+[100]	train-cox-nloglik:12.11120	valid-cox-nloglik:9.91541
+[150]	train-cox-nloglik:12.04192	valid-cox-nloglik:9.84798
+[200]	train-cox-nloglik:12.00362	valid-cox-nloglik:9.81192
+[250]	train-cox-nloglik:11.97912	valid-cox-nloglik:9.79041
+[300]	train-cox-nloglik:11.96212	valid-cox-nloglik:9.77657
+[350]	train-cox-nloglik:11.94810	valid-cox-nloglik:9.76569
+[400]	train-cox-nloglik:11.93689	valid-cox-nloglik:9.75757
+[450]	train-cox-nloglik:11.92693	valid-cox-nloglik:9.75082
+[500]	train-cox-nloglik:11.91804	valid-cox-nloglik:9.74476
+[550]	train-cox-nloglik:11.91042	valid-cox-nloglik:9.74006
+[600]	train-cox-nloglik:11.90351	valid-cox-nloglik:9.73568
+[650]	train-cox-nloglik:11.89735	valid-cox-nloglik:9.73180
+[699]	train-cox-nloglik:11.89160	valid-cox-nloglik:9.72846
+  Training model 3/3 (weight: 0.3)
+[0]	train-cox-nloglik:12.73839	valid-cox-nloglik:10.54270
+[50]	train-cox-nloglik:12.15427	valid-cox-nloglik:9.95445
+[100]	train-cox-nloglik:12.08868	valid-cox-nloglik:9.88827
+[150]	train-cox-nloglik:12.06474	valid-cox-nloglik:9.86439
+[200]	train-cox-nloglik:12.05069	valid-cox-nloglik:9.85101
+[250]	train-cox-nloglik:12.04148	valid-cox-nloglik:9.84231
+[300]	train-cox-nloglik:12.03478	valid-cox-nloglik:9.83614
+[350]	train-cox-nloglik:12.02895	valid-cox-nloglik:9.83053
+[400]	train-cox-nloglik:12.02389	valid-cox-nloglik:9.82617
+[450]	train-cox-nloglik:12.01880	valid-cox-nloglik:9.82146
+[500]	train-cox-nloglik:12.01460	valid-cox-nloglik:9.81762
+[550]	train-cox-nloglik:12.01037	valid-cox-nloglik:9.81379
+[600]	train-cox-nloglik:12.00701	valid-cox-nloglik:9.81099
+[650]	train-cox-nloglik:12.00366	valid-cox-nloglik:9.80790
+[700]	train-cox-nloglik:12.00025	valid-cox-nloglik:9.80486
+[750]	train-cox-nloglik:11.99720	valid-cox-nloglik:9.80196
+[800]	train-cox-nloglik:11.99422	valid-cox-nloglik:9.79939
+[850]	train-cox-nloglik:11.99152	valid-cox-nloglik:9.79698
+[900]	train-cox-nloglik:11.98883	valid-cox-nloglik:9.79462
+[950]	train-cox-nloglik:11.98621	valid-cox-nloglik:9.79241
+[999]	train-cox-nloglik:11.98381	valid-cox-nloglik:9.79038
+Generating ensemble predictions...
+  -> Predictions saved to ensemble_xgb_improved/Repay_Borrow.csv
+
+============================================================
+Processing and Predicting for: Repay -> Deposit
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+[0]	train-cox-nloglik:13.14358	valid-cox-nloglik:10.94654
+[50]	train-cox-nloglik:12.51777	valid-cox-nloglik:10.32516
+[100]	train-cox-nloglik:12.38130	valid-cox-nloglik:10.18956
+[150]	train-cox-nloglik:12.32590	valid-cox-nloglik:10.13504
+[200]	train-cox-nloglik:12.28134	valid-cox-nloglik:10.09188
+[250]	train-cox-nloglik:12.24590	valid-cox-nloglik:10.05795
+[300]	train-cox-nloglik:12.21445	valid-cox-nloglik:10.02813
+[350]	train-cox-nloglik:12.18915	valid-cox-nloglik:10.00446
+[400]	train-cox-nloglik:12.16836	valid-cox-nloglik:9.98510
+[450]	train-cox-nloglik:12.15018	valid-cox-nloglik:9.96865
+[500]	train-cox-nloglik:12.13382	valid-cox-nloglik:9.95403
+[550]	train-cox-nloglik:12.11901	valid-cox-nloglik:9.94079
+[600]	train-cox-nloglik:12.10680	valid-cox-nloglik:9.93038
+[650]	train-cox-nloglik:12.09372	valid-cox-nloglik:9.91876
+[700]	train-cox-nloglik:12.08147	valid-cox-nloglik:9.90820
+[750]	train-cox-nloglik:12.07058	valid-cox-nloglik:9.89893
+[800]	train-cox-nloglik:12.06060	valid-cox-nloglik:9.89052
+[850]	train-cox-nloglik:12.05092	valid-cox-nloglik:9.88242
+[899]	train-cox-nloglik:12.04229	valid-cox-nloglik:9.87549
+  Training model 2/3 (weight: 0.3)
+[0]	train-cox-nloglik:13.15353	valid-cox-nloglik:10.95590
+[50]	train-cox-nloglik:12.50195	valid-cox-nloglik:10.31162
+[100]	train-cox-nloglik:12.33009	valid-cox-nloglik:10.14270
+[150]	train-cox-nloglik:12.24794	valid-cox-nloglik:10.06322
+[200]	train-cox-nloglik:12.20038	valid-cox-nloglik:10.01826
+[250]	train-cox-nloglik:12.16862	valid-cox-nloglik:9.98876
+[300]	train-cox-nloglik:12.14291	valid-cox-nloglik:9.96508
+[350]	train-cox-nloglik:12.11641	valid-cox-nloglik:9.94180
+[400]	train-cox-nloglik:12.08783	valid-cox-nloglik:9.91726
+[450]	train-cox-nloglik:12.06381	valid-cox-nloglik:9.89734
+[500]	train-cox-nloglik:12.04248	valid-cox-nloglik:9.88008
+[550]	train-cox-nloglik:12.02263	valid-cox-nloglik:9.86413
+[600]	train-cox-nloglik:12.00572	valid-cox-nloglik:9.85091
+[650]	train-cox-nloglik:11.98974	valid-cox-nloglik:9.83845
+[699]	train-cox-nloglik:11.97469	valid-cox-nloglik:9.82710
+  Training model 3/3 (weight: 0.3)
+[0]	train-cox-nloglik:13.14686	valid-cox-nloglik:10.94891
+[50]	train-cox-nloglik:12.57735	valid-cox-nloglik:10.38126
+[100]	train-cox-nloglik:12.46127	valid-cox-nloglik:10.26681
+[150]	train-cox-nloglik:12.39993	valid-cox-nloglik:10.20670
+[200]	train-cox-nloglik:12.36295	valid-cox-nloglik:10.17052
+[250]	train-cox-nloglik:12.32756	valid-cox-nloglik:10.13591
+[300]	train-cox-nloglik:12.30052	valid-cox-nloglik:10.10954
+[350]	train-cox-nloglik:12.27714	valid-cox-nloglik:10.08660
+[400]	train-cox-nloglik:12.25916	valid-cox-nloglik:10.06919
+[450]	train-cox-nloglik:12.24341	valid-cox-nloglik:10.05372
+[500]	train-cox-nloglik:12.22915	valid-cox-nloglik:10.03982
+[550]	train-cox-nloglik:12.21606	valid-cox-nloglik:10.02715
+[600]	train-cox-nloglik:12.20406	valid-cox-nloglik:10.01567
+[650]	train-cox-nloglik:12.19385	valid-cox-nloglik:10.00622
+[700]	train-cox-nloglik:12.18323	valid-cox-nloglik:9.99623
+[750]	train-cox-nloglik:12.17473	valid-cox-nloglik:9.98814
+[800]	train-cox-nloglik:12.16555	valid-cox-nloglik:9.97975
+[850]	train-cox-nloglik:12.15789	valid-cox-nloglik:9.97261
+[900]	train-cox-nloglik:12.15010	valid-cox-nloglik:9.96521
+[950]	train-cox-nloglik:12.14301	valid-cox-nloglik:9.95888
+[999]	train-cox-nloglik:12.13692	valid-cox-nloglik:9.95343
+Generating ensemble predictions...
+  -> Predictions saved to ensemble_xgb_improved/Repay_Deposit.csv
+
+============================================================
+Processing and Predicting for: Repay -> Withdraw
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.45)
+[0]	train-cox-nloglik:13.19595	valid-cox-nloglik:10.99582
+[50]	train-cox-nloglik:12.63154	valid-cox-nloglik:10.43411
+[100]	train-cox-nloglik:12.50620	valid-cox-nloglik:10.31054
+[150]	train-cox-nloglik:12.42909	valid-cox-nloglik:10.23484
+[200]	train-cox-nloglik:12.38165	valid-cox-nloglik:10.18893
+[250]	train-cox-nloglik:12.34267	valid-cox-nloglik:10.15136
+[300]	train-cox-nloglik:12.31202	valid-cox-nloglik:10.12199
+[350]	train-cox-nloglik:12.28829	valid-cox-nloglik:10.09959
+[400]	train-cox-nloglik:12.26930	valid-cox-nloglik:10.08217
+[450]	train-cox-nloglik:12.24869	valid-cox-nloglik:10.06308
+[500]	train-cox-nloglik:12.23161	valid-cox-nloglik:10.04737
+[550]	train-cox-nloglik:12.21365	valid-cox-nloglik:10.03102
+[600]	train-cox-nloglik:12.19996	valid-cox-nloglik:10.01850
+[650]	train-cox-nloglik:12.18717	valid-cox-nloglik:10.00703
+[700]	train-cox-nloglik:12.17609	valid-cox-nloglik:9.99714
+[750]	train-cox-nloglik:12.16544	valid-cox-nloglik:9.98775
+[800]	train-cox-nloglik:12.15530	valid-cox-nloglik:9.97873
+[850]	train-cox-nloglik:12.14576	valid-cox-nloglik:9.97034
+[900]	train-cox-nloglik:12.13703	valid-cox-nloglik:9.96298
+[950]	train-cox-nloglik:12.12891	valid-cox-nloglik:9.95604
+[1000]	train-cox-nloglik:12.12066	valid-cox-nloglik:9.94879
+[1050]	train-cox-nloglik:12.11291	valid-cox-nloglik:9.94239
+[1100]	train-cox-nloglik:12.10569	valid-cox-nloglik:9.93616
+[1150]	train-cox-nloglik:12.09874	valid-cox-nloglik:9.93020
+[1200]	train-cox-nloglik:12.09203	valid-cox-nloglik:9.92462
+[1250]	train-cox-nloglik:12.08619	valid-cox-nloglik:9.91983
+[1300]	train-cox-nloglik:12.07971	valid-cox-nloglik:9.91462
+[1350]	train-cox-nloglik:12.07432	valid-cox-nloglik:9.91040
+[1399]	train-cox-nloglik:12.06873	valid-cox-nloglik:9.90600
+  Training model 2/3 (weight: 0.35)
+[0]	train-cox-nloglik:13.17817	valid-cox-nloglik:10.97846
+[50]	train-cox-nloglik:12.55279	valid-cox-nloglik:10.35702
+[100]	train-cox-nloglik:12.42151	valid-cox-nloglik:10.22857
+[150]	train-cox-nloglik:12.34785	valid-cox-nloglik:10.15741
+[200]	train-cox-nloglik:12.29664	valid-cox-nloglik:10.10841
+[250]	train-cox-nloglik:12.26048	valid-cox-nloglik:10.07491
+[300]	train-cox-nloglik:12.22577	valid-cox-nloglik:10.04284
+[350]	train-cox-nloglik:12.19665	valid-cox-nloglik:10.01642
+[400]	train-cox-nloglik:12.17149	valid-cox-nloglik:9.99348
+[450]	train-cox-nloglik:12.15118	valid-cox-nloglik:9.97596
+[500]	train-cox-nloglik:12.13057	valid-cox-nloglik:9.95762
+[550]	train-cox-nloglik:12.11423	valid-cox-nloglik:9.94337
+[600]	train-cox-nloglik:12.10058	valid-cox-nloglik:9.93200
+[650]	train-cox-nloglik:12.08736	valid-cox-nloglik:9.92090
+[700]	train-cox-nloglik:12.07477	valid-cox-nloglik:9.91047
+[750]	train-cox-nloglik:12.06289	valid-cox-nloglik:9.90081
+[800]	train-cox-nloglik:12.05154	valid-cox-nloglik:9.89187
+[850]	train-cox-nloglik:12.04151	valid-cox-nloglik:9.88401
+[900]	train-cox-nloglik:12.03050	valid-cox-nloglik:9.87550
+[950]	train-cox-nloglik:12.02124	valid-cox-nloglik:9.86845
+[1000]	train-cox-nloglik:12.01201	valid-cox-nloglik:9.86117
+[1050]	train-cox-nloglik:12.00397	valid-cox-nloglik:9.85542
+[1100]	train-cox-nloglik:11.99577	valid-cox-nloglik:9.84921
+[1150]	train-cox-nloglik:11.98696	valid-cox-nloglik:9.84285
+[1199]	train-cox-nloglik:11.97895	valid-cox-nloglik:9.83706
+  Training model 3/3 (weight: 0.2)
+[0]	train-cox-nloglik:13.19618	valid-cox-nloglik:10.99616
+[50]	train-cox-nloglik:12.52172	valid-cox-nloglik:10.32976
+[100]	train-cox-nloglik:12.35540	valid-cox-nloglik:10.16762
+[150]	train-cox-nloglik:12.28124	valid-cox-nloglik:10.09687
+[200]	train-cox-nloglik:12.23114	valid-cox-nloglik:10.05047
+[250]	train-cox-nloglik:12.19422	valid-cox-nloglik:10.01702
+[300]	train-cox-nloglik:12.15306	valid-cox-nloglik:9.98065
+[350]	train-cox-nloglik:12.11359	valid-cox-nloglik:9.94646
+[400]	train-cox-nloglik:12.08217	valid-cox-nloglik:9.91998
+[450]	train-cox-nloglik:12.05258	valid-cox-nloglik:9.89625
+[500]	train-cox-nloglik:12.02816	valid-cox-nloglik:9.87660
+[550]	train-cox-nloglik:12.00609	valid-cox-nloglik:9.85977
+[600]	train-cox-nloglik:11.98690	valid-cox-nloglik:9.84552
+[650]	train-cox-nloglik:11.96989	valid-cox-nloglik:9.83312
+[700]	train-cox-nloglik:11.95048	valid-cox-nloglik:9.81869
+[750]	train-cox-nloglik:11.93468	valid-cox-nloglik:9.80732
+[799]	train-cox-nloglik:11.92100	valid-cox-nloglik:9.79815
+Generating ensemble predictions...
+  -> Predictions saved to ensemble_xgb_improved/Repay_Withdraw.csv
+
+============================================================
+Processing and Predicting for: Repay -> Liquidated
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.45)
+[0]	train-cox-nloglik:13.09691	valid-cox-nloglik:10.89778
+[50]	train-cox-nloglik:11.60395	valid-cox-nloglik:9.38801
+[100]	train-cox-nloglik:11.33022	valid-cox-nloglik:9.11877
+[150]	train-cox-nloglik:11.18541	valid-cox-nloglik:8.98030
+[200]	train-cox-nloglik:11.04917	valid-cox-nloglik:8.84692
+[250]	train-cox-nloglik:10.92893	valid-cox-nloglik:8.73570
+[300]	train-cox-nloglik:10.82194	valid-cox-nloglik:8.63497
+[350]	train-cox-nloglik:10.71608	valid-cox-nloglik:8.53716
+[400]	train-cox-nloglik:10.62573	valid-cox-nloglik:8.45523
+[450]	train-cox-nloglik:10.54911	valid-cox-nloglik:8.38737
+[500]	train-cox-nloglik:10.46790	valid-cox-nloglik:8.31372
+[550]	train-cox-nloglik:10.40942	valid-cox-nloglik:8.26242
+[600]	train-cox-nloglik:10.34864	valid-cox-nloglik:8.20841
+[650]	train-cox-nloglik:10.29261	valid-cox-nloglik:8.15883
+[700]	train-cox-nloglik:10.23615	valid-cox-nloglik:8.10908
+[750]	train-cox-nloglik:10.18932	valid-cox-nloglik:8.07030
+[800]	train-cox-nloglik:10.14264	valid-cox-nloglik:8.03266
+[850]	train-cox-nloglik:10.09931	valid-cox-nloglik:7.99385
+[900]	train-cox-nloglik:10.06086	valid-cox-nloglik:7.96146
+[950]	train-cox-nloglik:10.02658	valid-cox-nloglik:7.93347
+[1000]	train-cox-nloglik:9.98615	valid-cox-nloglik:7.89992
+[1050]	train-cox-nloglik:9.95047	valid-cox-nloglik:7.87023
+[1100]	train-cox-nloglik:9.91563	valid-cox-nloglik:7.84257
+[1150]	train-cox-nloglik:9.88368	valid-cox-nloglik:7.81864
+[1200]	train-cox-nloglik:9.85042	valid-cox-nloglik:7.79349
+[1250]	train-cox-nloglik:9.82058	valid-cox-nloglik:7.76954
+[1300]	train-cox-nloglik:9.79101	valid-cox-nloglik:7.74526
+[1350]	train-cox-nloglik:9.76283	valid-cox-nloglik:7.72710
+[1399]	train-cox-nloglik:9.73837	valid-cox-nloglik:7.70911
+  Training model 2/3 (weight: 0.35)
+[0]	train-cox-nloglik:12.99490	valid-cox-nloglik:10.78837
+[50]	train-cox-nloglik:11.37455	valid-cox-nloglik:9.17775
+[100]	train-cox-nloglik:11.06309	valid-cox-nloglik:8.87593
+[150]	train-cox-nloglik:10.88896	valid-cox-nloglik:8.71024
+[200]	train-cox-nloglik:10.72643	valid-cox-nloglik:8.55287
+[250]	train-cox-nloglik:10.56328	valid-cox-nloglik:8.40417
+[300]	train-cox-nloglik:10.43118	valid-cox-nloglik:8.28788
+[350]	train-cox-nloglik:10.30415	valid-cox-nloglik:8.17413
+[400]	train-cox-nloglik:10.19881	valid-cox-nloglik:8.08255
+[450]	train-cox-nloglik:10.10934	valid-cox-nloglik:8.00698
+[500]	train-cox-nloglik:10.01822	valid-cox-nloglik:7.92632
+[550]	train-cox-nloglik:9.93774	valid-cox-nloglik:7.85946
+[600]	train-cox-nloglik:9.86816	valid-cox-nloglik:7.80317
+[650]	train-cox-nloglik:9.80539	valid-cox-nloglik:7.75543
+[700]	train-cox-nloglik:9.74212	valid-cox-nloglik:7.70518
+[750]	train-cox-nloglik:9.68038	valid-cox-nloglik:7.65941
+[800]	train-cox-nloglik:9.63126	valid-cox-nloglik:7.62352
+[850]	train-cox-nloglik:9.58041	valid-cox-nloglik:7.58743
+[900]	train-cox-nloglik:9.53400	valid-cox-nloglik:7.55513
+[950]	train-cox-nloglik:9.48743	valid-cox-nloglik:7.51987
+[1000]	train-cox-nloglik:9.44918	valid-cox-nloglik:7.49387
+[1050]	train-cox-nloglik:9.40987	valid-cox-nloglik:7.46615
+[1100]	train-cox-nloglik:9.36591	valid-cox-nloglik:7.43500
+[1150]	train-cox-nloglik:9.33257	valid-cox-nloglik:7.41583
+[1199]	train-cox-nloglik:9.29573	valid-cox-nloglik:7.39230
+  Training model 3/3 (weight: 0.2)
+[0]	train-cox-nloglik:13.00317	valid-cox-nloglik:10.81249
+[50]	train-cox-nloglik:11.02894	valid-cox-nloglik:8.86554
+[100]	train-cox-nloglik:10.61736	valid-cox-nloglik:8.48219
+[150]	train-cox-nloglik:10.39028	valid-cox-nloglik:8.27709
+[200]	train-cox-nloglik:10.21267	valid-cox-nloglik:8.12093
+[250]	train-cox-nloglik:10.06274	valid-cox-nloglik:7.99297
+[300]	train-cox-nloglik:9.93748	valid-cox-nloglik:7.89084
+[350]	train-cox-nloglik:9.80436	valid-cox-nloglik:7.78127
+[400]	train-cox-nloglik:9.66094	valid-cox-nloglik:7.67002
+[450]	train-cox-nloglik:9.54241	valid-cox-nloglik:7.58322
+[500]	train-cox-nloglik:9.42672	valid-cox-nloglik:7.49811
+[550]	train-cox-nloglik:9.32521	valid-cox-nloglik:7.42442
+[600]	train-cox-nloglik:9.24813	valid-cox-nloglik:7.37414
+[650]	train-cox-nloglik:9.16721	valid-cox-nloglik:7.32001
+[700]	train-cox-nloglik:9.09143	valid-cox-nloglik:7.27017
+[750]	train-cox-nloglik:9.02417	valid-cox-nloglik:7.23303
+[799]	train-cox-nloglik:8.96748	valid-cox-nloglik:7.20286
+Generating ensemble predictions...
+  -> Predictions saved to ensemble_xgb_improved/Repay_Liquidated.csv
+
+============================================================
+Processing and Predicting for: Withdraw -> Borrow
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.5)
+[0]	train-cox-nloglik:13.73319	valid-cox-nloglik:11.53660
+[50]	train-cox-nloglik:11.86312	valid-cox-nloglik:9.66155
+[100]	train-cox-nloglik:11.51406	valid-cox-nloglik:9.31401
+[150]	train-cox-nloglik:11.36663	valid-cox-nloglik:9.16982
+[200]	train-cox-nloglik:11.30245	valid-cox-nloglik:9.10745
+[250]	train-cox-nloglik:11.26338	valid-cox-nloglik:9.07256
+[300]	train-cox-nloglik:11.23465	valid-cox-nloglik:9.04745
+[350]	train-cox-nloglik:11.20760	valid-cox-nloglik:9.02612
+[400]	train-cox-nloglik:11.18052	valid-cox-nloglik:9.00820
+[450]	train-cox-nloglik:11.15252	valid-cox-nloglik:8.98923
+[500]	train-cox-nloglik:11.12741	valid-cox-nloglik:8.97712
+[550]	train-cox-nloglik:11.10416	valid-cox-nloglik:8.96189
+[600]	train-cox-nloglik:11.08270	valid-cox-nloglik:8.95369
+[650]	train-cox-nloglik:11.06154	valid-cox-nloglik:8.94659
+[700]	train-cox-nloglik:11.04288	valid-cox-nloglik:8.94796
+[750]	train-cox-nloglik:11.02528	valid-cox-nloglik:8.93925
+[799]	train-cox-nloglik:11.00935	valid-cox-nloglik:8.93398
+  Training model 2/3 (weight: 0.3)
+[0]	train-cox-nloglik:13.60699	valid-cox-nloglik:11.41089
+[50]	train-cox-nloglik:11.73647	valid-cox-nloglik:9.52710
+[100]	train-cox-nloglik:11.48339	valid-cox-nloglik:9.27254
+[150]	train-cox-nloglik:11.41265	valid-cox-nloglik:9.20192
+[200]	train-cox-nloglik:11.37336	valid-cox-nloglik:9.16336
+[250]	train-cox-nloglik:11.34280	valid-cox-nloglik:9.13481
+[300]	train-cox-nloglik:11.31127	valid-cox-nloglik:9.10890
+[350]	train-cox-nloglik:11.28404	valid-cox-nloglik:9.08645
+[400]	train-cox-nloglik:11.26040	valid-cox-nloglik:9.06917
+[450]	train-cox-nloglik:11.23602	valid-cox-nloglik:9.04845
+[500]	train-cox-nloglik:11.21377	valid-cox-nloglik:9.02994
+[550]	train-cox-nloglik:11.19477	valid-cox-nloglik:9.01557
+[600]	train-cox-nloglik:11.17740	valid-cox-nloglik:9.00255
+[650]	train-cox-nloglik:11.16007	valid-cox-nloglik:8.99028
+[700]	train-cox-nloglik:11.14385	valid-cox-nloglik:8.97921
+[750]	train-cox-nloglik:11.13055	valid-cox-nloglik:8.97005
+[800]	train-cox-nloglik:11.11728	valid-cox-nloglik:8.96544
+[850]	train-cox-nloglik:11.10523	valid-cox-nloglik:8.95913
+[899]	train-cox-nloglik:11.09336	valid-cox-nloglik:8.95349
+  Training model 3/3 (weight: 0.2)
+[0]	train-cox-nloglik:13.36278	valid-cox-nloglik:11.16574
+[50]	train-cox-nloglik:11.66474	valid-cox-nloglik:9.45445
+[100]	train-cox-nloglik:11.53131	valid-cox-nloglik:9.31918
+[150]	train-cox-nloglik:11.46219	valid-cox-nloglik:9.24857
+[200]	train-cox-nloglik:11.42533	valid-cox-nloglik:9.21392
+[250]	train-cox-nloglik:11.39854	valid-cox-nloglik:9.19127
+[300]	train-cox-nloglik:11.37635	valid-cox-nloglik:9.17195
+[350]	train-cox-nloglik:11.35535	valid-cox-nloglik:9.15306
+[400]	train-cox-nloglik:11.33901	valid-cox-nloglik:9.14416
+[450]	train-cox-nloglik:11.32187	valid-cox-nloglik:9.13260
+[500]	train-cox-nloglik:11.30772	valid-cox-nloglik:9.12952
+[550]	train-cox-nloglik:11.29608	valid-cox-nloglik:9.12010
+[600]	train-cox-nloglik:11.28556	valid-cox-nloglik:9.11487
+[650]	train-cox-nloglik:11.27591	valid-cox-nloglik:9.10761
+[700]	train-cox-nloglik:11.26702	valid-cox-nloglik:9.11375
+[750]	train-cox-nloglik:11.25691	valid-cox-nloglik:9.11238
+[761]	train-cox-nloglik:11.25474	valid-cox-nloglik:9.11070
+Generating ensemble predictions...
+  -> Predictions saved to ensemble_xgb_improved/Withdraw_Borrow.csv
+
+============================================================
+Processing and Predicting for: Withdraw -> Deposit
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+[0]	train-cox-nloglik:13.62762	valid-cox-nloglik:11.43021
+[50]	train-cox-nloglik:12.39048	valid-cox-nloglik:10.19302
+[100]	train-cox-nloglik:12.14385	valid-cox-nloglik:9.94615
+[150]	train-cox-nloglik:12.05466	valid-cox-nloglik:9.85763
+[200]	train-cox-nloglik:12.01432	valid-cox-nloglik:9.81845
+[250]	train-cox-nloglik:11.99154	valid-cox-nloglik:9.79670
+[300]	train-cox-nloglik:11.97513	valid-cox-nloglik:9.78130
+[350]	train-cox-nloglik:11.96164	valid-cox-nloglik:9.76933
+[400]	train-cox-nloglik:11.95147	valid-cox-nloglik:9.76064
+[450]	train-cox-nloglik:11.94285	valid-cox-nloglik:9.75348
+[500]	train-cox-nloglik:11.93562	valid-cox-nloglik:9.74785
+[550]	train-cox-nloglik:11.92886	valid-cox-nloglik:9.74287
+[600]	train-cox-nloglik:11.92279	valid-cox-nloglik:9.73814
+[650]	train-cox-nloglik:11.91739	valid-cox-nloglik:9.73390
+[700]	train-cox-nloglik:11.91229	valid-cox-nloglik:9.73022
+[750]	train-cox-nloglik:11.90787	valid-cox-nloglik:9.72741
+[800]	train-cox-nloglik:11.90360	valid-cox-nloglik:9.72482
+[850]	train-cox-nloglik:11.89976	valid-cox-nloglik:9.72254
+[899]	train-cox-nloglik:11.89567	valid-cox-nloglik:9.72008
+  Training model 2/3 (weight: 0.3)
+[0]	train-cox-nloglik:13.65966	valid-cox-nloglik:11.46220
+[50]	train-cox-nloglik:12.52742	valid-cox-nloglik:10.33178
+[100]	train-cox-nloglik:12.22281	valid-cox-nloglik:10.02841
+[150]	train-cox-nloglik:12.08355	valid-cox-nloglik:9.89107
+[200]	train-cox-nloglik:12.01099	valid-cox-nloglik:9.82064
+[250]	train-cox-nloglik:11.97031	valid-cox-nloglik:9.78233
+[300]	train-cox-nloglik:11.94628	valid-cox-nloglik:9.76095
+[350]	train-cox-nloglik:11.92857	valid-cox-nloglik:9.74591
+[400]	train-cox-nloglik:11.91450	valid-cox-nloglik:9.73433
+[450]	train-cox-nloglik:11.90228	valid-cox-nloglik:9.72540
+[500]	train-cox-nloglik:11.89097	valid-cox-nloglik:9.71768
+[550]	train-cox-nloglik:11.88087	valid-cox-nloglik:9.71147
+[600]	train-cox-nloglik:11.87185	valid-cox-nloglik:9.70585
+[650]	train-cox-nloglik:11.86358	valid-cox-nloglik:9.70145
+[699]	train-cox-nloglik:11.85642	valid-cox-nloglik:9.69769
+  Training model 3/3 (weight: 0.3)
+[0]	train-cox-nloglik:13.57215	valid-cox-nloglik:11.37471
+[50]	train-cox-nloglik:12.30497	valid-cox-nloglik:10.10722
+[100]	train-cox-nloglik:12.14571	valid-cox-nloglik:9.94703
+[150]	train-cox-nloglik:12.09415	valid-cox-nloglik:9.89524
+[200]	train-cox-nloglik:12.06092	valid-cox-nloglik:9.86181
+[250]	train-cox-nloglik:12.03996	valid-cox-nloglik:9.84075
+[300]	train-cox-nloglik:12.02574	valid-cox-nloglik:9.82698
+[350]	train-cox-nloglik:12.01538	valid-cox-nloglik:9.81731
+[400]	train-cox-nloglik:12.00634	valid-cox-nloglik:9.80864
+[450]	train-cox-nloglik:11.99878	valid-cox-nloglik:9.80161
+[500]	train-cox-nloglik:11.99185	valid-cox-nloglik:9.79514
+[550]	train-cox-nloglik:11.98567	valid-cox-nloglik:9.78950
+[600]	train-cox-nloglik:11.98017	valid-cox-nloglik:9.78464
+[650]	train-cox-nloglik:11.97554	valid-cox-nloglik:9.78064
+[700]	train-cox-nloglik:11.97054	valid-cox-nloglik:9.77609
+[750]	train-cox-nloglik:11.96631	valid-cox-nloglik:9.77225
+[800]	train-cox-nloglik:11.96242	valid-cox-nloglik:9.76881
+[850]	train-cox-nloglik:11.95885	valid-cox-nloglik:9.76573
+[900]	train-cox-nloglik:11.95559	valid-cox-nloglik:9.76312
+[950]	train-cox-nloglik:11.95210	valid-cox-nloglik:9.76017
+[999]	train-cox-nloglik:11.94893	valid-cox-nloglik:9.75740
+Generating ensemble predictions...
+  -> Predictions saved to ensemble_xgb_improved/Withdraw_Deposit.csv
+
+============================================================
+Processing and Predicting for: Withdraw -> Repay
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.5)
+[0]	train-cox-nloglik:13.77869	valid-cox-nloglik:11.58485
+[50]	train-cox-nloglik:12.07436	valid-cox-nloglik:9.88900
+[100]	train-cox-nloglik:11.77199	valid-cox-nloglik:9.59323
+[150]	train-cox-nloglik:11.68290	valid-cox-nloglik:9.50703
+[200]	train-cox-nloglik:11.64527	valid-cox-nloglik:9.47103
+[250]	train-cox-nloglik:11.62299	valid-cox-nloglik:9.45056
+[300]	train-cox-nloglik:11.60233	valid-cox-nloglik:9.43266
+[350]	train-cox-nloglik:11.57614	valid-cox-nloglik:9.41047
+[400]	train-cox-nloglik:11.54335	valid-cox-nloglik:9.38413
+[450]	train-cox-nloglik:11.50714	valid-cox-nloglik:9.35658
+[500]	train-cox-nloglik:11.47196	valid-cox-nloglik:9.32970
+[550]	train-cox-nloglik:11.44103	valid-cox-nloglik:9.30744
+[600]	train-cox-nloglik:11.41271	valid-cox-nloglik:9.28762
+[650]	train-cox-nloglik:11.38536	valid-cox-nloglik:9.26974
+[700]	train-cox-nloglik:11.36224	valid-cox-nloglik:9.25549
+[750]	train-cox-nloglik:11.34286	valid-cox-nloglik:9.24403
+[799]	train-cox-nloglik:11.32390	valid-cox-nloglik:9.23357
+  Training model 2/3 (weight: 0.3)
+[0]	train-cox-nloglik:13.71395	valid-cox-nloglik:11.51974
+[50]	train-cox-nloglik:12.01006	valid-cox-nloglik:9.81690
+[100]	train-cox-nloglik:11.82888	valid-cox-nloglik:9.63632
+[150]	train-cox-nloglik:11.78411	valid-cox-nloglik:9.59202
+[200]	train-cox-nloglik:11.75187	valid-cox-nloglik:9.56098
+[250]	train-cox-nloglik:11.71895	valid-cox-nloglik:9.53065
+[300]	train-cox-nloglik:11.68202	valid-cox-nloglik:9.49645
+[350]	train-cox-nloglik:11.65030	valid-cox-nloglik:9.46772
+[400]	train-cox-nloglik:11.62145	valid-cox-nloglik:9.44188
+[450]	train-cox-nloglik:11.59818	valid-cox-nloglik:9.42175
+[500]	train-cox-nloglik:11.57819	valid-cox-nloglik:9.40439
+[550]	train-cox-nloglik:11.55884	valid-cox-nloglik:9.38799
+[600]	train-cox-nloglik:11.53996	valid-cox-nloglik:9.37266
+[650]	train-cox-nloglik:11.52260	valid-cox-nloglik:9.35872
+[700]	train-cox-nloglik:11.50542	valid-cox-nloglik:9.34493
+[750]	train-cox-nloglik:11.48991	valid-cox-nloglik:9.33287
+[800]	train-cox-nloglik:11.47611	valid-cox-nloglik:9.32221
+[850]	train-cox-nloglik:11.46322	valid-cox-nloglik:9.31279
+[899]	train-cox-nloglik:11.45094	valid-cox-nloglik:9.30367
+  Training model 3/3 (weight: 0.2)
+[0]	train-cox-nloglik:13.62295	valid-cox-nloglik:11.42878
+[50]	train-cox-nloglik:12.02751	valid-cox-nloglik:9.83200
+[100]	train-cox-nloglik:11.93455	valid-cox-nloglik:9.73951
+[150]	train-cox-nloglik:11.86693	valid-cox-nloglik:9.67176
+[200]	train-cox-nloglik:11.82429	valid-cox-nloglik:9.62996
+[250]	train-cox-nloglik:11.79120	valid-cox-nloglik:9.59787
+[300]	train-cox-nloglik:11.76380	valid-cox-nloglik:9.57153
+[350]	train-cox-nloglik:11.74126	valid-cox-nloglik:9.54946
+[400]	train-cox-nloglik:11.72338	valid-cox-nloglik:9.53229
+[450]	train-cox-nloglik:11.70414	valid-cox-nloglik:9.51360
+[500]	train-cox-nloglik:11.69016	valid-cox-nloglik:9.50038
+[550]	train-cox-nloglik:11.67427	valid-cox-nloglik:9.48512
+[600]	train-cox-nloglik:11.65885	valid-cox-nloglik:9.47053
+[650]	train-cox-nloglik:11.64719	valid-cox-nloglik:9.45980
+[700]	train-cox-nloglik:11.63536	valid-cox-nloglik:9.44894
+[750]	train-cox-nloglik:11.62530	valid-cox-nloglik:9.44002
+[800]	train-cox-nloglik:11.61534	valid-cox-nloglik:9.43137
+[850]	train-cox-nloglik:11.60459	valid-cox-nloglik:9.42187
+[900]	train-cox-nloglik:11.59604	valid-cox-nloglik:9.41400
+[950]	train-cox-nloglik:11.58727	valid-cox-nloglik:9.40658
+[999]	train-cox-nloglik:11.57887	valid-cox-nloglik:9.39959
+Generating ensemble predictions...
+  -> Predictions saved to ensemble_xgb_improved/Withdraw_Repay.csv
+
+============================================================
+Processing and Predicting for: Withdraw -> Liquidated
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.5)
+[0]	train-cox-nloglik:13.24026	valid-cox-nloglik:11.04766
+[50]	train-cox-nloglik:10.95150	valid-cox-nloglik:8.78705
+[100]	train-cox-nloglik:10.60015	valid-cox-nloglik:8.45444
+[150]	train-cox-nloglik:10.43000	valid-cox-nloglik:8.30156
+[200]	train-cox-nloglik:10.32399	valid-cox-nloglik:8.21241
+[250]	train-cox-nloglik:10.22531	valid-cox-nloglik:8.12866
+[300]	train-cox-nloglik:10.14952	valid-cox-nloglik:8.06550
+[350]	train-cox-nloglik:10.08023	valid-cox-nloglik:8.00984
+[400]	train-cox-nloglik:10.00548	valid-cox-nloglik:7.95447
+[450]	train-cox-nloglik:9.93092	valid-cox-nloglik:7.89905
+[500]	train-cox-nloglik:9.85934	valid-cox-nloglik:7.84580
+[550]	train-cox-nloglik:9.79060	valid-cox-nloglik:7.79451
+[600]	train-cox-nloglik:9.72826	valid-cox-nloglik:7.75188
+[650]	train-cox-nloglik:9.66785	valid-cox-nloglik:7.70935
+[700]	train-cox-nloglik:9.60975	valid-cox-nloglik:7.67023
+[750]	train-cox-nloglik:9.55916	valid-cox-nloglik:7.63666
+[799]	train-cox-nloglik:9.51489	valid-cox-nloglik:7.60922
+  Training model 2/3 (weight: 0.3)
+[0]	train-cox-nloglik:13.22561	valid-cox-nloglik:11.03955
+[50]	train-cox-nloglik:11.22804	valid-cox-nloglik:9.03205
+[100]	train-cox-nloglik:10.96725	valid-cox-nloglik:8.77725
+[150]	train-cox-nloglik:10.84686	valid-cox-nloglik:8.66040
+[200]	train-cox-nloglik:10.75965	valid-cox-nloglik:8.57884
+[250]	train-cox-nloglik:10.66670	valid-cox-nloglik:8.49517
+[300]	train-cox-nloglik:10.55270	valid-cox-nloglik:8.39263
+[350]	train-cox-nloglik:10.46668	valid-cox-nloglik:8.31573
+[400]	train-cox-nloglik:10.38940	valid-cox-nloglik:8.24855
+[450]	train-cox-nloglik:10.32502	valid-cox-nloglik:8.19514
+[500]	train-cox-nloglik:10.26231	valid-cox-nloglik:8.14221
+[550]	train-cox-nloglik:10.20370	valid-cox-nloglik:8.09431
+[600]	train-cox-nloglik:10.15091	valid-cox-nloglik:8.04881
+[650]	train-cox-nloglik:10.10402	valid-cox-nloglik:8.01037
+[700]	train-cox-nloglik:10.06429	valid-cox-nloglik:7.98101
+[750]	train-cox-nloglik:10.02572	valid-cox-nloglik:7.95304
+[800]	train-cox-nloglik:9.98693	valid-cox-nloglik:7.92443
+[850]	train-cox-nloglik:9.94905	valid-cox-nloglik:7.89701
+[899]	train-cox-nloglik:9.91491	valid-cox-nloglik:7.87259
+  Training model 3/3 (weight: 0.2)
+[0]	train-cox-nloglik:13.18936	valid-cox-nloglik:11.02035
+[50]	train-cox-nloglik:11.43870	valid-cox-nloglik:9.23678
+[100]	train-cox-nloglik:11.23733	valid-cox-nloglik:9.03334
+[150]	train-cox-nloglik:11.09962	valid-cox-nloglik:8.89862
+[200]	train-cox-nloglik:10.98525	valid-cox-nloglik:8.78633
+[250]	train-cox-nloglik:10.89553	valid-cox-nloglik:8.70082
+[300]	train-cox-nloglik:10.81666	valid-cox-nloglik:8.62719
+[350]	train-cox-nloglik:10.75039	valid-cox-nloglik:8.56330
+[400]	train-cox-nloglik:10.69720	valid-cox-nloglik:8.51441
+[450]	train-cox-nloglik:10.64731	valid-cox-nloglik:8.47027
+[500]	train-cox-nloglik:10.60528	valid-cox-nloglik:8.43301
+[550]	train-cox-nloglik:10.56356	valid-cox-nloglik:8.39555
+[600]	train-cox-nloglik:10.52468	valid-cox-nloglik:8.36124
+[650]	train-cox-nloglik:10.48620	valid-cox-nloglik:8.32628
+[700]	train-cox-nloglik:10.44871	valid-cox-nloglik:8.29201
+[750]	train-cox-nloglik:10.42197	valid-cox-nloglik:8.26996
+[800]	train-cox-nloglik:10.39259	valid-cox-nloglik:8.24402
+[850]	train-cox-nloglik:10.36210	valid-cox-nloglik:8.21554
+[900]	train-cox-nloglik:10.33498	valid-cox-nloglik:8.19100
+[950]	train-cox-nloglik:10.30619	valid-cox-nloglik:8.16519
+[999]	train-cox-nloglik:10.28338	valid-cox-nloglik:8.14540
+Generating ensemble predictions...
+  -> Predictions saved to ensemble_xgb_improved/Withdraw_Liquidated.csv
+
+
+All prediction files have been generated.
+Successfully created 'ensemble_xgb_improved.zip' from the 'ensemble_xgb_improved' directory.
+You can now upload this file to the CodaBench competition.

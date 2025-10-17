@@ -1,0 +1,166 @@
+nohup: ignoring input
+
+============================================================
+Processing and Predicting for: Borrow -> Deposit
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+  Training model 2/3 (weight: 0.3)
+  Training model 3/3 (weight: 0.3)
+Generating ensemble predictions...
+  -> Predictions saved to 0.84630_ensemble_xgb/Borrow_Deposit.csv
+
+============================================================
+Processing and Predicting for: Borrow -> Repay
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+  Training model 2/3 (weight: 0.3)
+  Training model 3/3 (weight: 0.3)
+Generating ensemble predictions...
+  -> Predictions saved to 0.84630_ensemble_xgb/Borrow_Repay.csv
+
+============================================================
+Processing and Predicting for: Borrow -> Withdraw
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+  Training model 2/3 (weight: 0.4)
+  Training model 3/3 (weight: 0.2)
+Generating ensemble predictions...
+  -> Predictions saved to 0.84630_ensemble_xgb/Borrow_Withdraw.csv
+
+============================================================
+Processing and Predicting for: Borrow -> Liquidated
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+  Training model 2/3 (weight: 0.4)
+  Training model 3/3 (weight: 0.2)
+Generating ensemble predictions...
+  -> Predictions saved to 0.84630_ensemble_xgb/Borrow_Liquidated.csv
+
+============================================================
+Processing and Predicting for: Deposit -> Borrow
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+  Training model 2/3 (weight: 0.3)
+  Training model 3/3 (weight: 0.3)
+Generating ensemble predictions...
+  -> Predictions saved to 0.84630_ensemble_xgb/Deposit_Borrow.csv
+
+============================================================
+Processing and Predicting for: Deposit -> Repay
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+  Training model 2/3 (weight: 0.3)
+  Training model 3/3 (weight: 0.3)
+Generating ensemble predictions...
+  -> Predictions saved to 0.84630_ensemble_xgb/Deposit_Repay.csv
+
+============================================================
+Processing and Predicting for: Deposit -> Withdraw
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+  Training model 2/3 (weight: 0.3)
+  Training model 3/3 (weight: 0.3)
+Generating ensemble predictions...
+  -> Predictions saved to 0.84630_ensemble_xgb/Deposit_Withdraw.csv
+
+============================================================
+Processing and Predicting for: Deposit -> Liquidated
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+  Training model 2/3 (weight: 0.3)
+  Training model 3/3 (weight: 0.3)
+Generating ensemble predictions...
+  -> Predictions saved to 0.84630_ensemble_xgb/Deposit_Liquidated.csv
+
+============================================================
+Processing and Predicting for: Repay -> Borrow
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+  Training model 2/3 (weight: 0.3)
+  Training model 3/3 (weight: 0.3)
+Generating ensemble predictions...
+  -> Predictions saved to 0.84630_ensemble_xgb/Repay_Borrow.csv
+
+============================================================
+Processing and Predicting for: Repay -> Deposit
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+  Training model 2/3 (weight: 0.3)
+  Training model 3/3 (weight: 0.3)
+Generating ensemble predictions...
+  -> Predictions saved to 0.84630_ensemble_xgb/Repay_Deposit.csv
+
+============================================================
+Processing and Predicting for: Repay -> Withdraw
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+  Training model 2/3 (weight: 0.4)
+  Training model 3/3 (weight: 0.2)
+Generating ensemble predictions...
+  -> Predictions saved to 0.84630_ensemble_xgb/Repay_Withdraw.csv
+
+============================================================
+Processing and Predicting for: Repay -> Liquidated
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+  Training model 2/3 (weight: 0.4)
+  Training model 3/3 (weight: 0.2)
+Generating ensemble predictions...
+  -> Predictions saved to 0.84630_ensemble_xgb/Repay_Liquidated.csv
+
+============================================================
+Processing and Predicting for: Withdraw -> Borrow
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.5)
+  Training model 2/3 (weight: 0.3)
+  Training model 3/3 (weight: 0.2)
+Generating ensemble predictions...
+  -> Predictions saved to 0.84630_ensemble_xgb/Withdraw_Borrow.csv
+
+============================================================
+Processing and Predicting for: Withdraw -> Deposit
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.4)
+  Training model 2/3 (weight: 0.3)
+  Training model 3/3 (weight: 0.3)
+Generating ensemble predictions...
+  -> Predictions saved to 0.84630_ensemble_xgb/Withdraw_Deposit.csv
+
+============================================================
+Processing and Predicting for: Withdraw -> Repay
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.5)
+  Training model 2/3 (weight: 0.3)
+  Training model 3/3 (weight: 0.2)
+Generating ensemble predictions...
+  -> Predictions saved to 0.84630_ensemble_xgb/Withdraw_Repay.csv
+
+============================================================
+Processing and Predicting for: Withdraw -> Liquidated
+============================================================
+Training ensemble with 3 models...
+  Training model 1/3 (weight: 0.5)
+  Training model 2/3 (weight: 0.3)
+  Training model 3/3 (weight: 0.2)
+Generating ensemble predictions...
+  -> Predictions saved to 0.84630_ensemble_xgb/Withdraw_Liquidated.csv
+
+
+All prediction files have been generated.
+Successfully created '0.84630_ensemble_xgb.zip' from the '0.84630_ensemble_xgb' directory.
+You can now upload this file to the CodaBench competition.
