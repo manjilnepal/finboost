@@ -64,7 +64,7 @@ class EnsembleXGBoost:
             pred = -model.predict(dtest)
             predictions.append(pred * weight)
         
-        # weighted average
+        # Weighted average
         ensemble_pred = np.average(predictions, axis=0, weights=self.weights)
         return ensemble_pred
 
@@ -73,7 +73,7 @@ def create_ensemble_strategies(index_event: str, outcome_event: str) -> Ensemble
     
     ensemble = EnsembleXGBoost(index_event, outcome_event)
     
-    # STRATEGY 1: conservative (high regularization)
+    # Strategy 1: Conservative (high regularization)
     conservative_params = {
         'objective': 'survival:cox',
         'eval_metric': 'cox-nloglik',
@@ -81,7 +81,7 @@ def create_ensemble_strategies(index_event: str, outcome_event: str) -> Ensemble
         'min_child_weight': 5, 'lambda': 3.0, 'alpha': 0.5, 'gamma': 0.2, 'seed': 42
     }
     
-    # STRATEGY 2: aggressive (low regularization)
+    # Strategy 2: Aggressive (low regularization)
     aggressive_params = {
         'objective': 'survival:cox',
         'eval_metric': 'cox-nloglik',
@@ -89,7 +89,7 @@ def create_ensemble_strategies(index_event: str, outcome_event: str) -> Ensemble
         'min_child_weight': 1, 'lambda': 1.0, 'alpha': 0.1, 'gamma': 0.0, 'seed': 43
     }
     
-    # STRATEGY 3: balanced (medium regularization)
+    # Strategy 3: Balanced (medium regularization)
     balanced_params = {
         'objective': 'survival:cox',
         'eval_metric': 'cox-nloglik',
@@ -97,29 +97,29 @@ def create_ensemble_strategies(index_event: str, outcome_event: str) -> Ensemble
         'min_child_weight': 3, 'lambda': 2.0, 'alpha': 0.3, 'gamma': 0.1, 'seed': 44
     }
     
-    ## --- determine weights based on transition performance --- ##
+    # Determine weights based on transition performance
     if outcome_event in ['Liquidated', 'Repay', 'Borrow'] and index_event == 'Withdraw':
-        # strong performers - more aggressive 
-        ensemble.add_model(aggressive_params, 1000, 0.5)
-        ensemble.add_model(balanced_params, 1200, 0.3)
-        ensemble.add_model(conservative_params, 1200, 0.2)
+        # Strong performers - more aggressive
+        ensemble.add_model(aggressive_params, 900, 0.5)
+        ensemble.add_model(balanced_params, 1000, 0.3)
+        ensemble.add_model(conservative_params, 1000, 0.2)
     elif index_event in ['Repay', 'Borrow'] and outcome_event in ['Withdraw', 'Liquidated']:
-        # weak performers - more aggressive 
+        # Weak performers - more conservative
         ensemble.add_model(conservative_params, 1500, 0.4)
-        ensemble.add_model(balanced_params, 1400, 0.4)
-        ensemble.add_model(aggressive_params, 1500, 0.2)
+        ensemble.add_model(balanced_params, 1300, 0.4)
+        ensemble.add_model(aggressive_params, 1100, 0.2)
     else:
-        # moderate performers - balanced approach
-        ensemble.add_model(balanced_params, 1200, 0.4)
-        ensemble.add_model(aggressive_params, 1200, 0.3)
-        ensemble.add_model(conservative_params, 1300, 0.3)
+        # Moderate performers - balanced approach
+        ensemble.add_model(balanced_params, 1100, 0.4)
+        ensemble.add_model(aggressive_params, 900, 0.3)
+        ensemble.add_model(conservative_params, 1200, 0.3)
     
     return ensemble
 
 ## --- DEFINE PATH --- ##
 TRAIN_DATA_PATH = '/home/dgxuser40/manjil/finsurv/participant_data'
 TEST_DATA_PATH = '/home/dgxuser40/manjil/finsurv/test_features'
-SUBMISSION_DIR = f'new_more200_rounds_0.84630_ensemble_xgb'
+SUBMISSION_DIR = f'more200_rounds_0.84630_ensemble_xgb'
 os.makedirs(SUBMISSION_DIR, exist_ok=True)
 
 ## --- DEFINE ALL 16 EVENT PAIRS --- ##
@@ -177,7 +177,7 @@ for index_event, outcome_event in event_pairs:
 print("\n\nAll prediction files have been generated.")
 
 ## --- CREATE SUBMISSION FOLDER --- ##
-output_zip_filename = f'new_more200_rounds_0.84630_ensemble_xgb'
+output_zip_filename = f'more200_rounds_0.84630_ensemble_xgb'
 shutil.make_archive(output_zip_filename, 'zip', SUBMISSION_DIR)
 print(f"Successfully created '{output_zip_filename}.zip' from the '{SUBMISSION_DIR}' directory.")
 print("You can now upload this file to the CodaBench competition.")
