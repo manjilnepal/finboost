@@ -7,15 +7,13 @@ from sklearn.preprocessing import StandardScaler
 from typing import Tuple, Optional
 
 
-def add_transition_specific_features(df, index_event, outcome_event):
-    """Add transition-specific features for better C-index"""
-    
-    # Base survival features
+def add_transition_specific_features(df, index_event, outcome_event):    
+    ## -- base survival features -- ##
     df = add_survival_features(df)
     
-    # Transition-specific risk indicators
+    ## --  transition-specific risk indicators -- ##
     if outcome_event == 'Liquidated':
-        # Liquidation-specific features
+        # liquidation-specific features
         df['liquidation_risk_score'] = (
             df['userLiquidationCount'] * 0.4 +
             df['leverage_ratio'] * 0.3 +
@@ -25,30 +23,30 @@ def add_transition_specific_features(df, index_event, outcome_event):
         df['liquidation_proximity'] = 1 / (df['collateral_health'] + 0.1)
         
     elif outcome_event == 'Repay':
-        # Repay-specific features
+        # repay-specific features
         df['repay_urgency'] = df['userBorrowSumUSD'] / (df['userDepositSumUSD'] + 1)
         df['debt_maturity'] = df['userSecondsSinceFirstTransaction'] / (df['userBorrowCount'] + 1)
         df['repay_capacity'] = df['userDepositSumUSD'] / (df['userBorrowSumUSD'] + 1)
         
     elif outcome_event == 'Withdraw':
-        # Withdraw-specific features
+        # withdraw-specific features
         df['withdraw_opportunity'] = df['userDepositSumUSD'] / (df['marketDepositSumUSD'] + 1)
         df['withdraw_timing'] = df['timeOfDay'] * df['dayOfWeek'] / 7
         df['liquidity_preference'] = df['userWithdrawCount'] / (df['userDepositCount'] + 1)
         
     elif outcome_event == 'Deposit':
-        # Deposit-specific features
+        # deposit-specific features
         df['deposit_attractiveness'] = df['marketDepositAvgAmountUSD'] / (df['userDepositAvgAmountUSD'] + 1)
         df['deposit_timing'] = df['isWeekend'] * df['is_business_hours']
         df['deposit_momentum'] = df['userDepositCount'] / (df['userSecondsSinceFirstTransaction'] + 1)
         
     elif outcome_event == 'Borrow':
-        # Borrow-specific features
+        # borrow-specific features
         df['borrow_necessity'] = df['userBorrowSumUSD'] / (df['userDepositSumUSD'] + 1)
         df['borrow_capacity'] = df['userDepositSumUSD'] / (df['marketBorrowAvgAmountUSD'] + 1)
         df['borrow_risk_tolerance'] = df['userLiquidationCount'] / (df['userBorrowCount'] + 1)
     
-    # Cross-transition interaction features
+    ## -- cross-transition interaction features -- ##
     df['user_activity_diversity'] = (
         df['userBorrowCount'] + df['userDepositCount'] + 
         df['userRepayCount'] + df['userWithdrawCount']
@@ -59,59 +57,55 @@ def add_transition_specific_features(df, index_event, outcome_event):
         df['userDepositAvgAmount'] / (df['marketDepositAvgAmount'] + 1)
     ) / 2
     
-    # Temporal risk features
+    ## --  temporal risk features -- ##
     df['weekend_risk'] = df['isWeekend'] * df['userLiquidationCount']
     df['month_end_risk'] = df['is_month_end'] * df['leverage_ratio']
     
-    # Volatility features
+    ## -- volatility features -- ##
     df['amount_volatility'] = np.abs(df['amount'] - df['userBorrowAvgAmount']) / (df['userBorrowAvgAmount'] + 1)
     df['market_deviation'] = np.abs(df['amountUSD'] - df['marketBorrowAvgAmountUSD']) / (df['marketBorrowAvgAmountUSD'] + 1)
     
     return df
 
 
-def add_survival_features(df):
-    """Add survival-specific features for better C-index"""
-    
-    # User risk scoring
+## ADD SURVIVAL FEATURES FOR BETTER C_INDEX (EXPECTED) ##
+def add_survival_features(df):    
+    ## -- user risk scoring -- ##
     df['liquidation_risk'] = df['userLiquidationCount'] / (df['userBorrowCount'] + df['userDepositCount'] + 1)
     df['repayment_ratio'] = df['userRepaySum'] / (df['userBorrowSum'] + 1)
     df['leverage_ratio'] = df['userBorrowSumUSD'] / (df['userDepositSumUSD'] + 1)
     
-    # User activity patterns
+    ## -- user activity patterns -- ##
     df['activity_volatility'] = df[['userActiveDaysWeekly', 'userActiveDaysMonthly', 'userActiveDaysYearly']].std(axis=1)
     df['transaction_frequency'] = (df['userBorrowCount'] + df['userDepositCount'] + df['userRepayCount'] + df['userWithdrawCount']) / (df['userSecondsSinceFirstTransaction'] + 1)
     
-    # Market interaction features
+    ## -- market interaction features -- ##
     df['user_market_borrow_ratio'] = df['userBorrowAvgAmount'] / (df['marketBorrowAvgAmount'] + 1)
     df['user_market_deposit_ratio'] = df['userDepositAvgAmount'] / (df['marketDepositAvgAmount'] + 1)
     df['market_volatility_impact'] = np.abs(df['userBorrowAvgAmount'] - df['marketBorrowAvgAmount']) / (df['marketBorrowAvgAmount'] + 1)
     
-    # Temporal features
+    ## -- temporal features -- ##
     df['is_business_hours'] = ((df['timeOfDay'] >= 9) & (df['timeOfDay'] <= 17)).astype(float)
     df['is_month_end'] = (df['dayOfMonth'] >= 28).astype(float)
     df['temporal_interaction'] = df['sinDayOfMonth'] * df['cosDayOfWeek'] * df['sinTimeOfDay']
     
-    # Hazard rates
+    ## -- hazard rates -- ##
     df['borrow_hazard'] = df['userBorrowCount'] / (df['userSecondsSinceFirstTransaction'] + 1)
     df['deposit_hazard'] = df['userDepositCount'] / (df['userSecondsSinceFirstTransaction'] + 1)
     
     return df
 
 
+## -- function to preprocess the data for competition (from starting kit) -- ##
 def preprocess(train_df_with_labels: pd.DataFrame,
                test_features_df: Optional[pd.DataFrame] = None,
                index_event: str = None,
                outcome_event: str = None
                ) -> Tuple[pd.DataFrame, pd.DataFrame, Optional[pd.DataFrame]]:
-    """
-        Preprocesses data for the competition with transition-specific features.
-    """
 
-    # Add transition-specific features BEFORE separating targets
-    train_df_with_features = add_transition_specific_features(
-        train_df_with_labels.copy(), index_event, outcome_event
-    )
+
+    # add transition-specific features BEFORE separating targets
+    train_df_with_features = add_transition_specific_features(train_df_with_labels.copy(), index_event, outcome_event)
     train_targets = train_df_with_features[["timeDiff", "status"]]
     train_features = train_df_with_features.drop(columns=["timeDiff", "status"])
 
@@ -150,9 +144,7 @@ def preprocess(train_df_with_labels: pd.DataFrame,
 
     if test_features_df is not None:
         # add transition-specific features to test data BEFORE preprocessing
-        test_df_with_features = add_transition_specific_features(
-            test_features_df.copy(), index_event, outcome_event
-        )
+        test_df_with_features = add_transition_specific_features(test_features_df.copy(), index_event, outcome_event)
 
         # apply same preprocessing steps to test data
         test_features = test_df_with_features.drop(columns=cols_to_drop, errors="ignore")
