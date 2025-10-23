@@ -1,11 +1,11 @@
 TO RUN THE CODE, FOLLOW THESE STEPS:
 
 1. Set Dataset Paths:
-   - Replace TRAIN_DATA_PATH with the path to your starting training dataset.
-   - Replace TEST_DATA_PATH with the path to your holdout_test dataset.
+   - Replace TRAIN_DATA_PATH with the path to the starting training dataset.
+   - Replace TEST_DATA_PATH with the path to the holdout_test dataset.
 
 2. Install Requirements:
-   - Provided requirements.txt + XGBoost: (pip install xgboost)
+   - Provided requirements.txt 
 
 3. Run the Script:
    python best_xgb.py

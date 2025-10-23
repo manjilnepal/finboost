@@ -1,7 +1,6 @@
 Data
 .DS_Store
 data
-*.Rmd
 old-code
 training_data.tar.gz
 PythonCode

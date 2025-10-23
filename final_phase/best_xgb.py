@@ -120,8 +120,8 @@ def create_ensemble_strategies(index_event: str, outcome_event: str) -> Ensemble
     return ensemble
 
 ## --- DEFINE PATH --- ##
-TRAIN_DATA_PATH = '/home/dgxuser40/manjil/finsurv/participant_data'
-TEST_DATA_PATH = '/home/dgxuser40/manjil/finsurv/test_features'
+TRAIN_DATA_PATH = './participant_data'
+TEST_DATA_PATH = './test_features'
 SUBMISSION_DIR = f'best_ensemble_xgb'
 os.makedirs(SUBMISSION_DIR, exist_ok=True)
 

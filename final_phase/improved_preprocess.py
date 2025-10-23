@@ -68,7 +68,7 @@ def add_transition_specific_features(df, index_event, outcome_event):
     return df
 
 
-## ADD SURVIVAL FEATURES FOR BETTER C_INDEX (EXPECTED) ##
+## ADD SURVIVAL FEATURES FOR BETTER C_INDEX ##
 def add_survival_features(df):    
     ## -- user risk scoring -- ##
     df['liquidation_risk'] = df['userLiquidationCount'] / (df['userBorrowCount'] + df['userDepositCount'] + 1)
