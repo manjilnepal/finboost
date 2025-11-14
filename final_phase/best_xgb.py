@@ -107,8 +107,8 @@ def create_ensemble_strategies(index_event: str, outcome_event: str) -> Ensemble
 
     elif index_event in ['Repay', 'Borrow'] and outcome_event in ['Withdraw', 'Liquidated']:
         # weak performers - more conservative
-        ensemble.add_model(conservative_params, 1500, 0.4)
-        ensemble.add_model(balanced_params, 1300, 0.4)
+        ensemble.add_model(conservative_params, 1500, 0.5)
+        ensemble.add_model(balanced_params, 1300, 0.3)
         ensemble.add_model(aggressive_params, 1100, 0.2)
 
     else:
