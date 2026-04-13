@@ -7,5 +7,5 @@ We experimented with a range of survival models including:
 - **Cox Proportional Hazards (Cox PH)**
 - **Weibull Accelerated Failure Time (AFT)**
 - **DeepSurv**
-- **XGBoost** – achieved the **best concordance index (0.8472)**
+- **FinBoost** – achieved the **best concordance index (0.8472)**
 - **LightGBM**
